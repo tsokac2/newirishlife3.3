@@ -1,0 +1,420 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row justify-content-center p-4">
+        <div class="col">
+            <section class="section-life">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-6">
+                                <div class="col-12 col-sm-10 text-center">
+                                    {% with messages = get_flashed_messages(category_filter=["reg-success"]) %}
+                                        {% if messages %}
+                                            {% for message in messages %}
+                                            <div class="flash-success text-center">
+                                                <h2><i class="far fa-check-circle"></i> {{ message | safe }} </h2>
+                                            </div>
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endwith %}
+                                </div>
+                                <h1>TIPS</h1>
+                                <div class="intro-life">
+                                    <p><strong>You know that saying "Bits and pieces"!?</strong></p>
+                                    <p>
+                                        Well, here you read what our members are posting regarding travel, 
+                                        new work opportunities, the best burger in town, favorite place for a cup of coffee or tea,  
+                                        how to get from point A to point B the fastest way.
+                                        You know, stuff like that!
+                                    </p>
+                                    <p><strong>Or!</strong></p>
+                                    <p>
+                                        When you create your
+                                        <strong><a href="{{ url_for('registration')}}">Profile</a></strong>,
+                                         you can create and publish a useful tip and share it with our members.
+                                    </p>
+                                    <p><strong>Nice one, right?!</strong></p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 p-4">
+                                <div id="my-carousel" class="carousel slide carousel-fade" data-ride="carousel"
+                                    data-interval="2000">
+                                    <div class="carousel-inner gal-img">
+                                        <div class="carousel-item active">
+                                            <img class="d-block img-fluid" src="{{ url_for('static', filename='images/tips-gal-01.png')}}"
+                                                alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="{{ url_for('static', filename='images/tips-gal-02.png')}}"
+                                                alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="{{ url_for('static', filename='images/tips-gal-03.png')}}"
+                                                alt="Third slide">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-8 col-lg-4">
+                        <div class="serch-tips-wrap text-center">
+                            <h2>Search tips!</h2>
+                            <form action="{{url_for('search')}}" method="POST">
+                                <div class="row justify-content-start">
+                                    <div class="col-12">
+                                        <span><i class="fas fa-search"></i></span>
+                                        <input class="search-input" type="text" name="query" id="query" minlength="3" maxlength="15" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="serch-btn">SEARCH</button>
+                                        <a href="{{ url_for('tips') }}" class="reset-btn">RESET</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        {% if tips|length > 0 %}
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <div class="row justify-content-between">
+                                        <div class="col-12 col-md-5 text-center">
+                                            <h2 class="sub-tips-h2">TRIP</h2>
+                                            <div class="row justify-content-center">
+                                                <div class="col-12">
+                                                    {% for tip in tips %}
+                                                        {% if tip.tip_category == "Trip" %}
+                                                            <div class="row justify-content-center mb-4 bg-info">
+                                                                <div class="col-12 tips-card-wrap">
+                                                                    <div class="row justify-content-center head-wrap p-0">
+                                                                        <div class="col-9 profile-img p-0">
+                                                                            <img src="{{ url_for('static', filename='images/Logo.png')}}" 
+                                                                                width="55" alt="Logo">
+                                                                            <h3>{{ tip.created_by }}</h3>
+                                                                        </div>
+                                                                        <div class="col-3 wrap p-0">
+                                                                            <img src="{{ url_for('static', filename='images/public_transport_icon.png')}}" 
+                                                                                class="img-fluid" width="35" alt="Trip">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row justify-content-center footer-line border-card-wrap">
+                                                                        <div class="col-4 l"></div>
+                                                                        <div class="col-4 g"></div>
+                                                                        <div class="col-4 l"></div>
+                                                                    </div>
+                                                                    <div class="row justify-content-between content-wrap">
+                                                                        <div class="col-8 p-0 text-left">
+                                                                            <h3>{{ tip.tip_title }}</h3>
+                                                                        </div>
+                                                                        <div class="col-4 p-0 text-right">
+                                                                            <h4>{{ tip.date_added.strftime("%d %b, %Y") }}</h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row justify-content-between post">
+                                                                        <div class="col-12 p-0 text-left ">
+                                                                            <p>{{ tip.tip_description }}</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    {% if session.user|lower == tip.created_by|lower %}
+                                                                        <div class="row justify-content-start post-btn-wrap">
+                                                                            <div class="col-12 text-left ">
+                                                                                <a class="update-btn" href="{{ url_for('update_tip', tip_id=tip._id) }}">UPDATE</a>
+                                                                                <a class="delete-btn" href="#" data-toggle="modal" data-target="#delete-trip" >DELETE</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="modal fade" id="delete-trip" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="delete-trip" aria-hidden="true">
+                                                                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                                                <div class="modal-content delete-profile-modal">    
+                                                                                    <div class="modal-body">
+                                                                                        <div class="container-fluid p-0">
+                                                                                            <div class="row justify-content-center text-center">
+                                                                                                <div class="col-12 ">
+                                                                                                    <h2>Are you sure you want to delete your tip?</h2>
+                                                                                                    <a class="delete-btn" href="{{ url_for('delete_tip', tip_id=tip._id) }}">YES</a>
+                                                                                                    <a href="#" class="no-btn" data-dismiss="modal">NO</a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    {% endif %}
+                                                                </div>
+                                                            </div>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 ver-border-wrap text-center">
+                                            <div class="vertical-border-div p-2"></div>
+                                        </div>
+                                        <div class="col-12 d-md-none mt-3 mb-2">
+                                            <div class="row justify-content-center footer-line">
+                                                <div class="col-4 l"></div>
+                                                <div class="col-2 g"></div>
+                                                <div class="col-4 l"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5 text-center">
+                                            <h2 class="sub-tips-h2">WORK</h2>
+                                            <div class="row justify-content-center">
+                                                <div class="col-12">
+                                                    {% for tip in tips %}
+                                                        {% if tip.tip_category == "Work" %}
+                                                            <div class="row justify-content-center mb-4 bg-info">
+                                                                <div class="col-12 tips-card-wrap">
+                                                                    <div class="row justify-content-center head-wrap p-0">
+                                                                        <div class="col-9 profile-img p-0">
+                                                                            <img src="{{ url_for('static', filename='images/Logo.png')}}" 
+                                                                                width="55" alt="Logo">
+                                                                            <h3>{{ tip.created_by }}</h3>
+                                                                        </div>
+                                                                        <div class="col-3 wrap p-0">
+                                                                            <img src="{{ url_for('static', filename='images/work_tip_icon.png')}}" 
+                                                                                class="img-fluid" width="35" alt="Work">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row justify-content-center footer-line border-card-wrap">
+                                                                        <div class="col-4 l"></div>
+                                                                        <div class="col-4 g"></div>
+                                                                        <div class="col-4 l"></div>
+                                                                    </div>                       
+                                                                    <div class="row justify-content-between content-wrap">
+                                                                        <div class="col-8 p-0 text-left">
+                                                                            <h3>{{ tip.tip_title }}</h3>
+                                                                        </div>
+                                                                        <div class="col-4 p-0 text-right">
+                                                                            <h4>{{ tip.date_added.strftime("%d %b, %Y") }}</h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row justify-content-between post">
+                                                                        <div class="col-12 p-0 text-left">
+                                                                            <p>{{ tip.tip_description }}</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    {% if session.user|lower == tip.created_by|lower %}
+                                                                        <div class="row justify-content-start post-btn-wrap">
+                                                                            <div class="col-12 text-left ">
+                                                                                <a class="update-btn" href="{{ url_for('update_tip', tip_id=tip._id) }}">UPDATE</a>
+                                                                                <a href="#" class="delete-btn" data-toggle="modal" data-target="#delete-work" >DELETE</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="modal fade" id="delete-work" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="delete-work" aria-hidden="true">
+                                                                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                                                <div class="modal-content delete-profile-modal">    
+                                                                                    <div class="modal-body">
+                                                                                        <div class="container-fluid p-0">
+                                                                                            <div class="row justify-content-center text-center">
+                                                                                                <div class="col-12 ">
+                                                                                                    <h2>Are you sure you want to delete your tip?</h2>
+                                                                                                    <a class="delete-btn" href="{{ url_for('delete_tip', tip_id=tip._id) }}">YES</a>
+                                                                                                    <a href="#" class="no-btn" data-dismiss="modal">NO</a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    {% endif %}
+                                                                </div>
+                                                            </div>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row d-none d-md-block">
+                                        <div class="col-12">
+                                            <div class="row justify-content-between">
+                                                <div class="col-5 p-2 sub-section-border"></div>
+                                                <div class="col-5 p-2 sub-section-border"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row justify-content-between">
+                                        <div class="col-12 d-md-none mt-3 mb-2">
+                                            <div class="row justify-content-center footer-line">
+                                                <div class="col-4 l"></div>
+                                                <div class="col-2 g"></div>
+                                                <div class="col-4 l"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5 text-center">
+                                            <h2 class="sub-tips-h2">STUDY</h2>
+                                            <div class="row justify-content-center">
+                                                <div class="col-12">
+                                                    {% for tip in tips %}
+                                                        {% if tip.tip_category == "Study" %}
+                                                            <div class="row justify-content-center mb-4 bg-info">
+                                                                <div class="col-12 tips-card-wrap">
+                                                                    <div class="row justify-content-center head-wrap p-0">
+                                                                        <div class="col-9 profile-img p-0">
+                                                                            <img src="{{ url_for('static', filename='images/Logo.png')}}" 
+                                                                                width="55" alt="Logo">
+                                                                            <h3>{{ tip.created_by }}</h3>
+                                                                        </div>
+                                                                        <div class="col-3 wrap p-0">
+                                                                            <img src="{{ url_for('static', filename='images/study_tip_icon.png')}}" 
+                                                                                class="img-fluid" width="35" alt="Study">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row justify-content-center footer-line border-card-wrap">
+                                                                        <div class="col-4 l"></div>
+                                                                        <div class="col-4 g"></div>
+                                                                        <div class="col-4 l"></div>
+                                                                    </div>                                                              
+                                                                    <div class="row justify-content-between content-wrap">
+                                                                        <div class="col-8 p-0 text-left">
+                                                                            <h3>{{ tip.tip_title }}</h3>
+                                                                        </div>
+                                                                        <div class="col-4 p-0 text-right">
+                                                                            <h4>{{ tip.date_added.strftime("%d %b, %Y") }}</h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row justify-content-between post">
+                                                                        <div class="col-12 p-0 text-left">
+                                                                            <p>{{ tip.tip_description }}</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    {% if session.user|lower == tip.created_by|lower %}
+                                                                        <div class="row justify-content-start post-btn-wrap">
+                                                                            <div class="col-12 text-left ">
+                                                                                <a class="update-btn" href="{{ url_for('update_tip', tip_id=tip._id) }}">UPDATE</a>
+                                                                                <a href="#" class="delete-btn" data-toggle="modal" data-target="#delete-study" >DELETE</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="modal fade" id="delete-study" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="delete-study" aria-hidden="true">
+                                                                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                                                <div class="modal-content delete-profile-modal">    
+                                                                                    <div class="modal-body">
+                                                                                        <div class="container-fluid p-0">
+                                                                                            <div class="row justify-content-center text-center">
+                                                                                                <div class="col-12 ">
+                                                                                                    <h2>Are you sure you want to delete your tip?</h2>
+                                                                                                    <a class="delete-btn" href="{{ url_for('delete_tip', tip_id=tip._id) }}">YES</a>
+                                                                                                    <a href="#" class="no-btn" data-dismiss="modal">NO</a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    {% endif %}
+                                                                </div>
+                                                            </div>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 ver-border-wrap text-center">
+                                            <div class="vertical-border-div p-2"></div>
+                                        </div>
+                                        <div class="col-12 d-md-none mt-3 mb-2">
+                                            <div class="row justify-content-center footer-line">
+                                                <div class="col-4 l"></div>
+                                                <div class="col-2 g"></div>
+                                                <div class="col-4 l"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-5 text-center">
+                                            <h2 class="sub-tips-h2">FOOD</h2>
+                                            <div class="row justify-content-center">
+                                                <div class="col-12">
+                                                    {% for tip in tips %}
+                                                        {% if tip.tip_category == "Food" %}
+                                                            <div class="row justify-content-center mb-4 bg-info">
+                                                                <div class="col-12 tips-card-wrap">
+                                                                    <div class="row justify-content-center head-wrap p-0">
+                                                                        <div class="col-9 profile-img p-0">
+                                                                            <img src="{{ url_for('static', filename='images/Logo.png')}}" 
+                                                                                width="55" alt="Logo">
+                                                                            <h3>{{ tip.created_by }}</h3>
+                                                                        </div>
+                                                                        <div class="col-3 wrap p-0">
+                                                                            <img src="{{ url_for('static', filename='images/food_tip_icon.png')}}" 
+                                                                                class="img-fluid" width="35" alt="Food">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row justify-content-center footer-line border-card-wrap">
+                                                                        <div class="col-4 l"></div>
+                                                                        <div class="col-4 g"></div>
+                                                                        <div class="col-4 l"></div>
+                                                                    </div>
+                                                                    <div class="row justify-content-between content-wrap">
+                                                                        <div class="col-8 p-0 text-left">
+                                                                            <h3>{{ tip.tip_title }}</h3>
+                                                                        </div>
+                                                                        <div class="col-4 p-0 text-right">
+                                                                            <h4>{{ tip.date_added.strftime("%d %b, %Y") }}</h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row justify-content-between post">
+                                                                        <div class="col-12 p-0 text-left ">
+                                                                            <p>{{ tip.tip_description }}</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    {% if session.user|lower == tip.created_by|lower %}
+                                                                        <div class="row justify-content-start post-btn-wrap">
+                                                                            <div class="col-12 text-left ">
+                                                                                <a class="update-btn" href="{{ url_for('update_tip', tip_id=tip._id) }}">UPDATE</a>
+                                                                                <a href="#" class="delete-btn" data-toggle="modal" data-target="#delete-food" >DELETE</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="modal fade" id="delete-food" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="delete-food" aria-hidden="true">
+                                                                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                                                <div class="modal-content delete-profile-modal">    
+                                                                                    <div class="modal-body">
+                                                                                        <div class="container-fluid p-0">
+                                                                                            <div class="row justify-content-center text-center">
+                                                                                                <div class="col-12 ">
+                                                                                                    <h2>Are you sure you want to delete your tip?</h2>
+                                                                                                    <a class="delete-btn" href="{{ url_for('delete_tip', tip_id=tip._id) }}">YES</a>
+                                                                                                    <a href="#" class="no-btn" data-dismiss="modal">NO</a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    {% endif %}
+                                                                </div>
+                                                            </div>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-sm-8 col-lg-4">
+                                    <div class="serch-tips-wrap text-center">
+                                        <h2 class="no-results"><i class="fas fa-exclamation-triangle"></i> No result found!</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock %}
