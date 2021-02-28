@@ -1,4 +1,4 @@
-<h1 align="center" style="color:blue;">New Irish Life</h1>
+<h1  style="color:blue;">New Irish Life</h1>
 
 Web-based travel guide for providing correct information on how easily start living and working in Ireland.
 Finding work, a place to stay where to buy good cheap food in Ireland can be difficult but with the correct preparation,
