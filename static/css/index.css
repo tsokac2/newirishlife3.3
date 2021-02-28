@@ -1530,12 +1530,12 @@ body {
       background-color: #054144;
       color: white; }
 
-.main-nav-wrap {
+.large-menu-wrap {
   background-image: linear-gradient(to bottom, white, #acf4f2); }
-  .main-nav-wrap .left-nav-wrap {
+  .large-menu-wrap .large-left-menu {
     margin-top: 2rem;
     padding: 2rem 0; }
-    .main-nav-wrap .left-nav-wrap a {
+    .large-menu-wrap .large-left-menu a {
       margin: 0;
       text-align: center;
       font-family: "Lato", sans-serif;
@@ -1548,27 +1548,27 @@ body {
       font-size: 1.4rem;
       border-right: 1px solid #054144; }
       @media (min-width: 768px) {
-        .main-nav-wrap .left-nav-wrap a {
+        .large-menu-wrap .large-left-menu a {
           width: 7.7rem;
           font-size: 1.8rem;
           letter-spacing: 1px; } }
       @media (min-width: 992px) {
-        .main-nav-wrap .left-nav-wrap a {
+        .large-menu-wrap .large-left-menu a {
           width: 9.7rem; } }
       @media (min-width: 1200px) {
-        .main-nav-wrap .left-nav-wrap a {
+        .large-menu-wrap .large-left-menu a {
           width: 11.7rem;
           font-size: 2.2rem; } }
-      .main-nav-wrap .left-nav-wrap a:hover {
+      .large-menu-wrap .large-left-menu a:hover {
         color: white;
         background-color: #085f63;
         transition: .5s ease; }
-    .main-nav-wrap .left-nav-wrap .rt {
+    .large-menu-wrap .large-left-menu .rt {
       border-right: none; }
-  .main-nav-wrap .right-nav-wrap {
+  .large-menu-wrap .large-right-menu {
     margin-top: 2rem;
     padding: 2rem 0; }
-    .main-nav-wrap .right-nav-wrap a {
+    .large-menu-wrap .large-right-menu a {
       display: inline-block;
       margin: 0 .1rem;
       padding: .5rem 1rem;
@@ -1580,12 +1580,12 @@ body {
       border-radius: 2px;
       background-color: #0f6367;
       text-decoration: none; }
-      .main-nav-wrap .right-nav-wrap a i {
+      .large-menu-wrap .large-right-menu a i {
         margin-right: .5rem; }
-      .main-nav-wrap .right-nav-wrap a:hover {
+      .large-menu-wrap .large-right-menu a:hover {
         background-color: black; }
       @media (min-width: 768px) {
-        .main-nav-wrap .right-nav-wrap a {
+        .large-menu-wrap .large-right-menu a {
           margin: 0 .5rem; } }
 
 .nav-padding {
