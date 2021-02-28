@@ -22,7 +22,7 @@
 <div class="blur"></div>
 <nav class="container-fluid fixed-top d-none d-sm-block">
     <div class="row justify-content-center">
-        <div class="col-12 main-nav-wrap">
+        <div class="col-12 large-menu-wrap">
             <div class="row justify-content-center">
                 <div class="col-5 mt-4 p-0 text-center">
                     <div class="large-left-menu">
@@ -44,7 +44,7 @@
                                 {% if session.user %}
                                     <a href="{{ url_for('add_tip')}}"><i class="fas fa-plus"></i>Tips</a>
                                     <a href="{{ url_for('profile', username=session['user']) }}"> <i class="fas fa-user-plus"></i>Profile</a>
-                                    <a href="{{ url_for('add_tip')}}"><i class="fas fa-user-plus"></i>Logout</a>
+                                    <a href="{{ url_for('logout')}}"><i class="fas fa-user-plus"></i>Logout</a>
                                 {% else %}
                                     <a href="{{ url_for('registration')}}"><i class="fas fa-user-plus"></i>Sign Up</a>
                                     <a href="{{ url_for('login')}}"><i class="fas fa-sign-in-alt"></i>Login</a>
