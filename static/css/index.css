@@ -742,11 +742,11 @@ body {
           justify-content: center;
           text-align: center;
           text-decoration: none;
-          padding: 1rem 1.5rem;
+          padding: 1rem 1rem;
           background-color: rgba(134, 193, 191, 0.6);
           color: #054144;
           font-weight: 700;
-          font-size: 1.2rem;
+          font-size: .8rem;
           transition: all .2s ease-in; }
           .section-life .cards-wrap .wrap .q-links-wrap .q-links:hover {
             background-color: white; }
