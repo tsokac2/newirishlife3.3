@@ -67,7 +67,6 @@ def registration():
         session["user"] = request.form.get("username").lower()
         flash("Welcome to your new profile!", "reg-success")
         return redirect(url_for("profile", username=session["user"]))
-
     return render_template("registration.html", title="Register", form=form)
 
 
@@ -90,7 +89,6 @@ def login():
         else:
             flash("Incorrect Username and/or Password", "reg-danger")
             return redirect(url_for("login"))
-    
     return render_template("login.html", title="| Login", form=form)
 
 
@@ -163,7 +161,6 @@ def delete_user():
     flash("Your profile is deleted!", "profile-deleted")
     session.pop("user")
     return redirect("registration")
-
     return render_template("registration.html", title="| Home")
 
 
