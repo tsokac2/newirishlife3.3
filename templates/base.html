@@ -25,12 +25,12 @@
         <div class="col-12 main-nav-wrap">
             <div class="row justify-content-center">
                 <div class="col-5 mt-4 p-0 text-center">
-                    <div class="left-nav-wrap">
+                    <div class="large-left-menu">
                         <a href="{{ url_for('home')}}">HOME</a>
                         <a href="{{ url_for('trip')}}">TRIP</a>
                         <a href="{{ url_for('work')}}">WORK</a>
                         <a href="{{ url_for('life')}}">LIFE</a>
-                        <a class="rt" href="{{ url_for('tips')}}">TIPS <i class="fas fa-comment-dots"></i></a>
+                        <a href="{{ url_for('tips')}}">TIPS</a>
                     </div>
                 </div>
                 <div class="col-2 mt-4 p-0 text-center">
@@ -40,14 +40,14 @@
                 <div class="col-5 p-0 mt-4">
                     <div class="row justify-content-start">
                         <div class="col-12 text-center">
-                            <div class="right-nav-wrap">
+                            <div class="large-right-menu">
                                 {% if session.user %}
-                                <a href="{{ url_for('add_tip')}}"><i class="fas fa-plus"></i></i>Tips</a>
-                                <a href="{{ url_for('profile', username=session['user']) }}"><i class="fas fa-user-plus"></i>Profile</a>
-                                <a href="{{ url_for('logout')}}"><i class="fas fa-user-plus"></i>Logout</a>
+                                    <a href="{{ url_for('add_tip')}}"><i class="fas fa-plus"></i>Tips</a>
+                                    <a href="{{ url_for('profile', username=session['user']) }}"> <i class="fas fa-user-plus"></i>Profile</a>
+                                    <a href="{{ url_for('add_tip')}}"><i class="fas fa-user-plus"></i>Logout</a>
                                 {% else %}
-                                <a href="{{ url_for('registration')}}"><i class="fas fa-user-plus"></i>Sign Up</a>
-                                <a href="{{ url_for('login')}}"><i class="fas fa-sign-in-alt"></i>Login</a>
+                                    <a href="{{ url_for('registration')}}"><i class="fas fa-user-plus"></i>Sign Up</a>
+                                    <a href="{{ url_for('login')}}"><i class="fas fa-sign-in-alt"></i>Login</a>
                                 {% endif %}
                             </div>
                         </div>
