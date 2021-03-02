@@ -67,7 +67,7 @@ there was a lot of info about life in Ireland, but not essentials information in
 
 * Definition by **WORK** section - As a First Time Visitor, I want to easily understand how to start a job search process with the best possible preparation for the Irish work market:
  * Users can quickly understand where to start the job search process.
- * User can understand what kind of [CV](https://tsokac2.github.io/newIrishLife.2.0/assets/downloads/Tomislav_Sokac_CV.pdf) template is necessary for a successful job search mission.
+ * User can understand what kind of [CV](https://tsokac2.github.io/newIrishLife.3.0/static/downloads/Tomislav_Sokac_CV.pdf) template is necessary for a successful job search mission.
  * User can find the best option for online education with the best offers.
 
 * Definition by **LIFE** section - As a First Time Visitor, I want to easily find the best online rental marketplaces, the most popular mobile networks provider, and large-chain grocery shops
@@ -97,17 +97,136 @@ there was a lot of info about life in Ireland, but not essentials information in
   * When the user creat tip, the user is redirected to the **TIPS** section with the success message **_Tip successfully added!_**
 
 ### Design process
-* **1.** Draft all main sections of the web-page - **_HOME_**, **_TRIP_**, **_WORK_**, **_LIFE_**, **_TIPS_**, **_UPDATE TIPS_**, 
-**_SEARCH TIPS_**, **_SIGN UP_**, **_LOGIN_**,**_PROFILE_**.
+* **1.** Draft all main sections - **HOME**, **TRIP**, **WORK**, **LIFE**, **TIPS**, **SIGN UP**, **LOGIN**, and **PROFILE**.
 * **2.** Brief list of all pop-ups and alert messages and their front-end placement.
 * **3.** List all color pallets - usage - background color, font color, border.
-* **4.** List all font styles for best UX, regarding user profile details, movie quotes, post titles, and descriptions. 
-* **5.** Draft web-page layout using Adobe Photoshop and Balsamiq for the main layout and Adobe Illustrator for layout components such as Logo, borders, navigation elements.
-* **6.** List possible Fowtawesome Icon for best UX in picture experiences and a draft of custom icons.
-* **7.** Plan Python and Flask implementation into project root infrastructure folder.
-* **8.** List Semantic Mark-up to structure HTML code.
-* **9.** List CSS folder structure for SASS Pre-processor configuration.
-* **10.** List of preferable Python packages for best possible performance and UX. 
-* **11.** Plan and implement Google Maps API for orientation purposes.
-* **12.** Plan and implement Emailjs API service for Newsletter form.
-* **13.** Take notes for all major development issue, their solutions, challenges, project credits, and SLACK community guidance.
+* **4.** List all font styles for best UX, regarding user profile details, movie quotes, post titles, and descriptions.
+* **5.** A list of free images from the free-image web platforms for each project section.
+* **6.** Draft web-page layout using Adobe Photoshop and Balsamiq for the main layout and Adobe Illustrator for layout components such as Logo, borders, navigation elements.
+* **7.** List possible Fowtawesome Icon for best UX in picture experiences and a draft of custom icons.
+* **8.** Plan Python and Flask implementation into project root infrastructure folder.
+* **9.** List Semantic Mark-up to structure HTML code.
+* **10.** List CSS folder structure for SASS Pre-processor configuration.
+* **11.** List of preferable Python packages for best possible performance and UX. 
+* **12.** Plan and implement Google Maps API for orientation purposes.
+* **13.** Plan and implement Emailjs API service for Newsletter form.
+* **14.** Take notes for all major development issue, their solutions, challenges, project credits, and SLACK community guidance.
+
+### Wireframes
+* **HOME** section general idea - for Large and Small screens devices - [View]()
+* **TRIP**, **WORK**, and **LIFE** sections general idea - for Large and Small screens devices - [View]()
+* **TRIP**, **WORK**, and **LIFE** - **_"Quick links"_** cards general idea for Small screens devices - [View]()
+* **TRIP GOOGLE MAPS** section general idea - for Large and Small screens devices [View]()
+* **TIPS** section general idea - for Large and Small screens devices - [View]() 
+* **SIGN UP** section general idea - for Large and Small screens devices - [View]()
+* **LOGIN** section general idea - for Large and Small screens devices - [View]()
+* **PROFILE** section general idea - for Large and Small screens devices - [View]()
+* **FOOTER** section general idea - for Small devices - [View]()
+* **MAIN MENU** section general idea - CSS Grid elements - for Small devices - [View]()
+
+### Main Layout
+* MENU: HOME | TRIP | WORK | STUDY | TIPS  --LOGO--  SIGN UP | LOGIN - after user login - +TIPS | PROFILE | LOGOUT
+* MAIN SECTIONS: Website features - HOME, TRIP, WORK, LIFE,  SIGN UP, LOGIN -- +TIPS | PROFILE
+* FOOTER: Footer Menu links - Newsletter Subtraction - Social Media links - Copyrights
+
+# FEATURES
+
+## HOME
+Simple introduction of web page purpose and what value it is bringing to an end-user.
+
+Formatted in three main sub-sections:
+* Movie reference pitch - from -  _"The Hobbit: An Unexpected Journey"_
+* Welcoming **_"Hero"_** area with picture composition
+* Quick box-model overview of the web page main sections
+* Footer section including; Mirroring top left menu for **HOME**, **TRIP**, **WORK**, **LIFE**, **TIPS**, followed with **Newsletter** user email subscribe services form [View Screenshot]() and finishing with social networks links for user sharing purposes
+* The Footer section is replicated across all website sub-section pages for better UX
+
+## TRIP
+Section introduction with intro reference and **"call-to-action"** headings
+
+Formatted in two main sub-sections:
+* **_CHOOSE WISELY_** Flights booking web services
+* **_HOP ON_** Ireland public transportation's most popular options and guidelines
+* **Quick Links...** quick link option for precise user search in specified link area - [View Screenshot]()
+* **Google Maps** with a tracker for public transportation and _"Hot"_ locations in Dublin city with 3 markers in different colors for **Dublin Bus**, **Dart Train**, and **Luas** services - [View Screenshot]()
+
+## WORK
+Introduction and quick links of the most popular Irish online recruitment sites with an additional section for online education possibilities
+
+Formatted in two main sub-sections:
+* **_START HERE_** Most popular job search services for the Irish job market
+* **_BACK TO SCHOOL_** Most popular online courses and full-time education institutions
+* **_Quick Links..._** quick link option for precise user search in specified link area - [View Screenshot]()
+
+## LIFE
+Section with life essentials factors after moving to Ireland
+
+Formatted in three main sub-sections:
+* **_ACCOMMODATION_** Online rental agencies
+* **_MOBILE NETWORKS_** Mobile/internet networks providers
+* **_GROCERY SHOPS_** Irish Top food chains for grocery shopping
+* **_Quick Links..._** Quick link option for precise user search in specified link area - [View Screenshot]()
+
+## TIPS
+Section with tips and useful advice from other users
+
+Formatted in three main sub-sections:
+* **_TIPS_** Introduction and purpose of the tips section
+* **_SEARCH_** Ability to search posted tips by referring to tip title and tip description
+* Tips cards container with four tip categories including  _Trip_, _Work_, _Study_, and _Food_ 
+
+## SIGN UP
+Section with the option to _create_ a user profile for full website management
+
+Formatted in three main sub-sections:
+* **_Create Account_** Registration form including inputs fields for; _Username_, _Email_, _Password_, Confirm Password_ and _Sign Up_ button
+* Overview of the website purpose displayed in four cards - **_Trip_**, **_Work_**, **_Life_**, **_News_**
+* Home hero area with photo composition styling
+
+## LOGIN
+Section with the option to _login_ to a user profile for full website management
+
+Formatted in three main sub-sections:
+* **_Already a member_** Login form including inputs fields for; _Username_, _Password_ and _Login_ button
+* Overview of the website purpose displayed in four cards - **_Trip_**, **_Work_**, **_Life_**, **_News_**
+* Home hero area with photo composition styling
+
+## PROFILE
+Section for user profile details and delete option
+
+Formatted in three main sub-sections:
+* **_Profile info_** User details listed in the following order; _Username_, _Email_, _Joined Date_
+* Option for the user to _delete_ profile
+* Overview of the website purpose displayed in four cards - **_Trip_**, **_Work_**, **_Life_**, **_News_**
+* Home hero area with photo composition styling
+
+## ADD TIP
+Section for active users to write and upload useful tips
+
+Formatted in three main sub-sections:
+* **_Create new tip_** Input form including inputs fields for; Choose Category, Tip Title, Tip description, and Post button
+* Overview of the website purpose displayed in four cards - **_Trip_**, **_Work_**, **_Life_**, **_News_**
+* Home hero area with photo composition styling
+
+## CROS-PROJECT FEATURES
+The Main Menu is placed on to header and footer part of the website.
+
+The  Main Menu bar is designed for large and small devices for the best UX.
+
+Welcoming **Home** _"Hero"_ section; **Home** image composition section followed with four cards with _Trip_, _Work_, _Study_ and _News_ headings is replicated through the website.
+
+### Features Left to Implement
+
+Expansion plan:
+* Implementing comments section for the users, regarding specific website content.
+* Implement section for all necessary documentation in Ireland, regarding and PPS number, Bank Account option.
+* Implement section regarding social events and gathering for necessary user connection expansion.
+* Offer **_"Jobs Adds"_** section for recruitment agencies  - a connection between end-user and possible employer or recruitment agent.
+
+
+
+
+
+
+
+
