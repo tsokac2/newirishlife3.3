@@ -238,13 +238,13 @@ Expansion plan:
 
 # TECHNOLOGIES USED
 
-## # HTML
+## # [HTML](https://en.wikipedia.org/wiki/HTML)
 **Semantic elements**: _nav_, _section_, _footer_, _div_(content division element), _span_(inline container), _i_ (text element)
 
-## # CSS3
+## # [CSS3](https://en.wikipedia.org/wiki/CSS)
 **Modules:** Borders, Background and text-effects, Flexible Box Layout, CSS Grid Layout, CSS Transitions, CSS Image Values & Replaced Content, CSS Values & Units
 
-## # SASS PRE-PROCESSOR
+## # [SASS PRE-PROCESSOR](https://sass-lang.com/)
 **TOOLS INCLUDED:**
 * SASS interpolation
 * SASS Mixings - Responsive layout functions
@@ -275,16 +275,16 @@ _**SASS IMPLEMENTATION AND FOLDER STRUCTURE**_
   * **SASS RESPONSIVE Mixins** function [EXAMPLE]()
 * All files in the above folders **MUST** be named with the following naming conventions: `_filename.scss`
 
-## # NODE.JS
+## # [NODE.JS](https://nodejs.org/en/)
 * Open-source, cross-platform, back-end, JavaScript runtime environment - href="https://nodejs.org/en/
 
-## # NPM
+## # [NPM](https://www.npmjs.com/)
 * Package manager - Use package - `node-sass` - https://www.npmjs.com/
 
-## # JAVASCRIPT
+## # [JAVASCRIPT](https://www.javascript.com/)
 Features: _Dom Events_, _Validation of User’s Input_, _Else and If Statement_, _Handling Events_,  _In Built Function_
 
-## # JQUERY
+## # [JQUERY](https://fonts.google.com/)
 **APPLIED jQuery DOM EVENTS** for highlighting **_"Quick Links"_** cards elements
 
 _TRIP_, _WORK_, and _LIFE_ sections are containing **_Quick Links_** card elements.
@@ -309,19 +309,15 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 
 **FULL SOURCE CODE:** for jQuery Cards DOM Events [cards.js]()
 
-**FULL LIBRARY SOURCE:** - https://code.jquery.com/
-
-## # BOOTSTRAP v4.5.2
+## # [BOOTSTRAP v4.5.2](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 * Bootstrap was used to assist with the responsiveness and styling of the website
 * Mani layout control - responsive layout usage - helper classes included - example -  .mt, .pt, .d-none .d-md-block, .col, col-sm, col-md, col-lg, etc...
 * Library provider: https://getbootstrap.com
-* Library URL: [Bootstrap DOC 4.5.2](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 
-## # GOOGLE CDN's and GOOGLE API
+## # [GOOGLE CDN's](https://fonts.google.com/) and [GOOGLE API] (https://developers.google.com/maps/gmp-get-started#quickstart)
 * Google Fonts - [Merienda](https://fonts.google.com/specimen/Merienda?preview.text=&preview.text_type=custom&query=mer)
 * Google Fonts - [Lato](https://fonts.google.com/?preview.text=&preview.text_type=custom&query=LATO)
 * Google Fonts - [Josefin](https://fonts.google.com/specimen/Josefin+Sans?preview.text_type=custom)
-* Google API [Google Maps API](https://developers.google.com/maps/gmp-get-started#quickstart)
 
 **GOOGLE API IMPLEMENTATION STEPS:**
   * Pick Google Maps product [More info](https://developers.google.com/maps/gmp-get-started#quickstart)
@@ -350,9 +346,8 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 
 **FULL SOURCE CODE:** GOOGLE MAPS API [maps.js]()
 
-## # EMAILJS
+## # [EMAILJS](https://dashboard.emailjs.com/sign-in)
 **IMPLEMENTATION**
-* Log in to EmailJs dashboard - https://dashboard.emailjs.com/sign-in
 * Add New Service - Gmail
 * Email Templates - Create New Template
 * Use following syntax for form attributes, syntax {{form_name}}
@@ -396,11 +391,28 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 
 * Validation tests are covered in [TESTING.MD](A) file
 
-## # JASMINE BEHAVIOR-DRIVEN JavaScript
-* Library provider: https://jasmine.github.io
+## # [JASMINE BEHAVIOR-DRIVEN JavaScript](https://jasmine.github.io)
 * Full testing and implementation process described in [TESTING.MD]() file 
 
 ## # [FONTAWESOME](https://fontawesome.com/) 
 * Use mostly for menu items and across projects elements
+
+## # [GIT](https://git-scm.com/)
+* Distributed version control system
+
+## # [GITHUB] (https://github.com/)
+* Project files hosting platform
+
+## # [IDE Visual Studio Code](https://code.visualstudio.com/)
+
+## # [ADOBE PHOTOSHOP](https://www.adobe.com/)
+* Images preparation - Logo Design
+
+## # [ADOBE ILLUSTRATOR](https://www.adobe.com/)
+* Logo Design 
+
+## # [Balsamiq Wireframes](https://balsamiq.com/)
+* Wireframes Design
+
 
 
