@@ -305,5 +305,44 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 
 **FULL LIBRARY SOURCE:** - https://code.jquery.com/
 
+## # BOOTSTRAP v4.5.2
+* Bootstrap was used to assist with the responsiveness and styling of the website
+* Mani layout control - responsive layout usage - helper classes included - example -  .mt, .pt, .d-none .d-md-block, .col, col-sm, col-md, col-lg, etc...
+* Library provider: https://getbootstrap.com
+* Library URL: [Bootstrap DOC 4.5.2](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+
+## # GOOGLE CDN's and GOOGLE API
+* Google Fonts - [Merienda](https://fonts.google.com/specimen/Merienda?preview.text=&preview.text_type=custom&query=mer)
+* Google Fonts - [Lato](https://fonts.google.com/?preview.text=&preview.text_type=custom&query=LATO)
+* Google Fonts - [Josefin](https://fonts.google.com/specimen/Josefin+Sans?preview.text_type=custom)
+* Google API [Google Maps API](https://developers.google.com/maps/gmp-get-started#quickstart)
+
+**GOOGLE API IMPLEMENTATION STEPS:**
+  * Pick Google Maps product [More info](https://developers.google.com/maps/gmp-get-started#quickstart)
+  * Create a project.
+  * Set up a billing account.
+  * Enable APIs associated with the products you picked.
+  * Create an API key-  documentation source - [API Key](https://developers.google.com/maps/documentation/javascript/get-api-key)
+  * API keys for frontend-only applications cannot be hidden like is stated on the following link [Hide API Keys](https://gist.github.com/derzorngottes/3b57edc1f996dddcab25), developers [Comment](https://github.com/tsokac2/newIrishLife.2.0/blob/master/assets/wireframes/API_Secure.png)
+
+**SCRIPTS INTEGRATION:**
+  * In `<head>` element place `<scripts>` in following order:
+
+    ```
+    <script src="assets/js/markerclusterer_compiled.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key="YOUR API KEY"&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
+    ```
+  * Create `<div>` element with ID `<div id="map">` render map place
+  * Marker Cluster CDN - [SOURCE](https://cdnjs.com/libraries/js-marker-clusterer)
+  * Creating call-back function in `<script src="assets/js/maps.js"></script>` -  [CODE EXAMPLE]() from lines **1 - 36** 
+
+* `function initMap() {..}` maps location on a major scale in this case Dublin, Ireland
+* `google.maps.event.addDomListener(window, "resize", function() {...}` adding Google Maps DOM listener
+* `let busMarkerIcon = {...}` creating custom map marker with `scaledSize` property
+* `const Bus747Stop = new google.maps.Marker({...});` pointing to Bus Stop for 747 Dublin Bus line for Dublin Airport
+
+**FULL SOURCE CODE:** GOOGLE MAPS API [maps.js]()
+
 
 
