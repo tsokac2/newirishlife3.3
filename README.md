@@ -276,10 +276,10 @@ _**SASS IMPLEMENTATION AND FOLDER STRUCTURE**_
 * All files in the above folders **MUST** be named with the following naming conventions: `_filename.scss`
 
 ## # [NODE.JS](https://nodejs.org/en/)
-* Open-source, cross-platform, back-end, JavaScript runtime environment - href="https://nodejs.org/en/
+* Use for NPM `package.jsno` file implemetation in to project root
 
 ## # [NPM](https://www.npmjs.com/)
-* Package manager - Use package - `node-sass` - https://www.npmjs.com/
+* Package manager - Use package - `node-sass`
 
 ## # [JAVASCRIPT](https://www.javascript.com/)
 Features: _Dom Events_, _Validation of User’s Input_, _Else and If Statement_, _Handling Events_,  _In Built Function_
@@ -312,7 +312,7 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 ## # [BOOTSTRAP v4.5.2](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 * Bootstrap was used to assist with the responsiveness and styling of the website
 * Mani layout control - responsive layout usage - helper classes included - example -  .mt, .pt, .d-none .d-md-block, .col, col-sm, col-md, col-lg, etc...
-* Library provider: https://getbootstrap.com
+
 
 ## # [GOOGLE CDN's](https://fonts.google.com/) and [GOOGLE API](https://developers.google.com/maps/gmp-get-started#quickstart)
 * Google Fonts - [Merienda](https://fonts.google.com/specimen/Merienda?preview.text=&preview.text_type=custom&query=mer)
@@ -412,7 +412,7 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 ## # [ADOBE ILLUSTRATOR](https://www.adobe.com/)
 * Logo Design 
 
-## # [Balsamiq Wireframes](https://balsamiq.com/)
+## # [BALSAMIQ WIREFRAMES](https://balsamiq.com/) 
 * Wireframes Design
 
 
