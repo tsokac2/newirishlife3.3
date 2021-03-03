@@ -343,30 +343,32 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
   * Collection: **_categories_**
   ```
     {
-	  _id: ObjectId("unique-value")
-	  tip_category: "Trip"
+      _id: ObjectId("unique-value")
+      tip_category: "Trip"
     }
   ```
   * Collection: **_tips_**
 
    ```
     {
-	  _id: ObjectId("unique-value")
-	  tip_category : "Food"
-	  tip_title: "Food Glorisu Food"
-    tip_description: "Best burger is bunsen burger"
-	  date_added: 2021-02-28T11:25:00.557+00:00
-	  created_by: "John"
+      _id: ObjectId("unique-value")
+      tip_category : "Food"
+      tip_title: "Food Glorisu Food"
+      tip_description: "Best burger is bunsen burger"
+      date_added: 2021-02-28T11:25:00.557+00:00
+      created_by: "John"
     }
   ```
   * Collection: **_users_**
 
   ```
-  _id: ObjectId("unique-value")
-	username : "John"
-	email: "john@email.com"
-  password: "unique-value"
-	date_created: 2021-02-28T11:25:00.557+00:00
+  {
+    _id: ObjectId("unique-value")
+    username : "John"
+    email: "john@email.com"
+    password: "unique-value"
+    date_created: 2021-02-28T11:25:00.557+00:00
+  }
   ```
 
 ## # [HEROKU](https://www.heroku.com)
