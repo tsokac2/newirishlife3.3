@@ -97,20 +97,33 @@ there was a lot of info about life in Ireland, but not essentials information in
   * When the user creat tip, the user is redirected to the **TIPS** section with the success message **_Tip successfully added!_**
 
 ### Design process
-* **1.** Draft all main sections - **HOME**, **TRIP**, **WORK**, **LIFE**, **TIPS**, **SIGN UP**, **LOGIN**, and **PROFILE**.
-* **2.** Brief list of all pop-ups and alert messages and their front-end placement.
-* **3.** List all color pallets - usage - background color, font color, border.
-* **4.** List all font styles for best UX, regarding user profile details, movie quotes, post titles, and descriptions.
-* **5.** A list of free images from the free-image web platforms for each project section.
-* **6.** Draft web-page layout using Adobe Photoshop and Balsamiq for the main layout and Adobe Illustrator for layout components such as Logo, borders, navigation elements.
-* **7.** List possible Fowtawesome Icon for best UX in picture experiences and a draft of custom icons.
-* **8.** Plan Python and Flask implementation into project root infrastructure folder.
-* **9.** List Semantic Mark-up to structure HTML code.
-* **10.** List CSS folder structure for SASS Pre-processor configuration.
-* **11.** List of preferable Python packages for best possible performance and UX. 
-* **12.** Plan and implement Google Maps API for orientation purposes.
-* **13.** Plan and implement Emailjs API service for Newsletter form.
-* **14.** Take notes for all major development issue, their solutions, challenges, project credits, and SLACK community guidance.
+**1.** Draft all main sections - **HOME**, **TRIP**, **WORK**, **LIFE**, **TIPS**, **SIGN UP**, **LOGIN**, and **PROFILE**.
+
+**2.** Brief list of all pop-ups and alert messages and their front-end placement.
+
+**3.** List all color pallets - usage - background color, font color, border.
+
+**4.** List all font styles for best UX, regarding user profile details, movie quotes, post titles, and descriptions.
+
+**5.** A list of free images from the free-image web platforms for each project section.
+
+**6.** Draft web-page layout using Adobe Photoshop and Balsamiq for the main layout and Adobe Illustrator for layout components such as Logo, borders, navigation elements.
+
+**7.** List possible Fowtawesome Icon for best UX in picture experiences and a draft of custom icons.
+
+**8.** Plan Python and Flask implementation into project root infrastructure folder.
+
+**9.** List Semantic Mark-up to structure HTML code.
+
+**10.** List CSS folder structure for SASS Pre-processor configuration.
+
+**11.** List of preferable Python packages for best possible performance and UX. 
+
+**12.** Plan and implement Google Maps API for orientation purposes.
+
+**13.** Plan and implement Emailjs API service for Newsletter form.
+
+**14.** Take notes for all major development issue, their solutions, challenges, project credits, and SLACK community guidance.
 
 ### Wireframes
 * **HOME** section general idea - for Large and Small screens devices - [View]()
@@ -222,6 +235,10 @@ Expansion plan:
 * Implement section for all necessary documentation in Ireland, regarding and PPS number, Bank Account option.
 * Implement section regarding social events and gathering for necessary user connection expansion.
 * Offer **_"Jobs Adds"_** section for recruitment agencies  - a connection between end-user and possible employer or recruitment agent.
+
+# TECHNOLOGIES USED
+
+### **# HTML**
 
 
 
