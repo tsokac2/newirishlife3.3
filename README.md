@@ -480,3 +480,28 @@ DB connection details are stored in an env.py for development, for security reas
 ## # [AM I Responsive?](http://ami.responsivedesign.is/)
 * Multi-Device Website Mockup Generator was used to create the project Mock up image
 
+# TESTING
+
+
+
+# DEPLOYMENT
+
+**[PROJECT LINK]()**
+
+**LOCAL PROJECT SETUP:**
+* Create a new repository on [GitHub](https://github.com)
+* Create a project folder on the local device
+* Start [CMD](https://en.wikipedia.org/wiki/Cmd.exe) on the local device and navigate to the root folder of the project
+* Initialize project root folder with the following CMD command: `git init`
+* Create _README.MD_ file with CMD comand: `echo #New Irish Life > README.md`
+* Initiate `git add .` command in CMD project root folder
+* Initiate commit `git commit -m "Test first commit"` command in CMD project root folder
+* Create a connection with the local device and GitHub repository with CMD command 
+  ```
+  git remote add origin https://github.com/username/project_repo_name.git
+  ```
+* Initiate push command `git push -u origin master`
+* Make regular commits after every project change with proper commit message more info in [Git Commit Message](https://chris.beams.io/posts/git-commit/#separate)
+* Use Git push command in CMD `git push`
+
+
