@@ -241,6 +241,12 @@ Expansion plan:
 ### # HTML
 **Semantic elements**: _nav_, _section_, _footer_, _div_(content division element), _span_(inline container), _i_ (text element)
 
+### # CSS3
+**Modules:** Borders, Background and text-effects, Flexible Box Layout, CSS Grid Layout, CSS Transitions, CSS Image Values & Replaced Content, CSS Values & Units
+
+### # SASS Pre-processor
+
+
 
 
 
