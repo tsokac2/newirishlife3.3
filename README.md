@@ -278,7 +278,7 @@ _**SASS IMPLEMENTATION AND FOLDER STRUCTURE**_
 ## # JAVASCRIPT
 Features: _Dom Events_, _Validation of User’s Input_, _Else and If Statement_, _Handling Events_,  _In Built Function_
 
-## #JQUERY
+## # JQUERY
 **APPLIED jQuery DOM EVENTS** for highlighting **_"Quick Links"_** cards elements
 
 _TRIP_, _WORK_, and _LIFE_ sections are containing **_Quick Links_** card elements.
@@ -344,5 +344,50 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 
 **FULL SOURCE CODE:** GOOGLE MAPS API [maps.js]()
 
+## # EMAILJS
+**IMPLEMENTATION**
+* Log in to EmailJs dashboard - https://dashboard.emailjs.com/sign-in
+* Add New Service - Gmail
+* Email Templates - Create New Template
+* Use following syntax for form attributes, syntax {{form_name}}
+* SENT Email content from a user
+* Select the Auto-Reply option and place the following: **_SUBJECT**: On behalf of all of us from New Irish Life, welcome onboard!_
+* **WELCOMING** [Email]() content sent to the user after successful submission
+
+**SCRIPTS INTEGRATION:**
+ * Before closing **`<head>`** element place following **CDN** script tag:
+    * `<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>`
+  * Place following call-back function after **CDN** link
+
+  ```
+  <script type="text/javascript">
+        (function() {
+        emailjs.init("user_hI6S08d1aK1XKKU2VWtOI");
+        })();
+  </script>
+  ```
+  * Check `User ID` under "Integration" option on EmailJS dashboard
+  * Create `sendEmail` function [CODE EXAMPLE]() from lines **88 - 103** 
+
+**FROM VALIDATION DEVELOPMENT**
+* Create [EventTarget]() method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target, in this case `newsletter()` function - [CODE EXAMPLE]() from lines **1 - 3** 
+*  Create 2 validation function for UX purposes, `validateName()` and `validateEmail()` function.
+* `validateName()` function is _**returning**_ Boolean value `true` or `false` that is stored in empty variable `var valid;` depending of a user input string value - [CODE EXAMPLE]() from lines **5 - 22**
+* Implement call-back functions regarding what kind of input value was submitted by a user.
+* `pushSuccessFor()` function is adding a `.success` class to the input element when user input is valid - [CODE EXAMPLE]() from lines **55 - 58**
+* User email validation is stored in the `validateEmail()` function with a call-back function that is checking user email - [SOURCE]()
+* To get a valid email id we use a regular expression
+* Regular Expression Pattern : `/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/`
+* `testEmail()` function:
+
+  ```
+    function testEmail(email) {
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+    };
+  ```
+
+* To submit user data to the server we are declaring `send()` function in variable `var send = function(){...};` and calling that function when submit `<button>` is triggered - [CODE EXAMPLE]() from lines **60 - 76**
+
+* Validation tests are covered in [TESTING](A)
 
 
