@@ -119,11 +119,14 @@ there was a lot of info about life in Ireland, but not essentials information in
 
 **11.** List of preferable Python packages for best possible performance and UX. 
 
-**12.** Plan and implement Google Maps API for orientation purposes.
+**12.** Plan database collections structure - user collection details, user tips collection details, and tips categories list
 
-**13.** Plan and implement Emailjs API service for Newsletter form.
+**13.** Plan and implement Google Maps API for orientation purposes.
 
-**14.** Take notes for all major development issue, their solutions, challenges, project credits, and SLACK community guidance.
+**14.** Plan and implement Emailjs API service for Newsletter form.
+
+**15.** Take notes for all major development issue, their solutions, challenges, project credits, and SLACK community guidance.
+ 
 
 ### Wireframes
 * **HOME** section general idea - for Large and Small screens devices - [View]()
@@ -332,8 +335,44 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 * Used as data storage for this users registration and login details
 * Used as data storage for user post(tips) details
 
-## # [HEROKU](https://www.heroku.com)
+**IMPLEMENTATION STEPS:**
+* Create MongoDB Account
+* Create Cluster
+* Select Cluster  > **Collections** > **+ Create database** > **Create Collection**
+* MongoDB Collection Object format schema examples:
+  * Collection: **_categories_**
+  ```
+    {
+	  _id: ObjectId("unique-value")
+	  tip_category: "Trip"
+    }
+  ```
+  * Collection: **_tips_**
 
+   ```
+    {
+	  _id: ObjectId("unique-value")
+	  tip_category : "Food"
+	  tip_title: "Food Glorisu Food"
+    tip_description: "Best burger is bunsen burger"
+	  date_added: 2021-02-28T11:25:00.557+00:00
+	  created_by: "John"
+    }
+  ```
+  * Collection: **_users_**
+
+  ```
+  _id: ObjectId("unique-value")
+	username : "John"
+	email: "john@email.com"
+  password: "unique-value"
+	date_created: 2021-02-28T11:25:00.557+00:00
+  ```
+
+## # [HEROKU](https://www.heroku.com)
+* Cloud platform service used for hosting a "live" version of the project
+
+**IMPLEMENTATION STEPS:**
 
 
 ## # [GOOGLE CDN's](https://fonts.google.com/) and [GOOGLE API](https://developers.google.com/maps/gmp-get-started#quickstart)
@@ -438,5 +477,5 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 * Wireframes Design
 
 ## # [AM I Responsive?](http://ami.responsivedesign.is/)
-* Multi-Device Website Mockup Generator was used to create the Mock up image in this README
+* Multi-Device Website Mockup Generator was used to create the project Mock up image
 
