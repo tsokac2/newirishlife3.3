@@ -276,7 +276,7 @@ _**SASS IMPLEMENTATION AND FOLDER STRUCTURE**_
 * All files in the above folders **MUST** be named with the following naming conventions: `_filename.scss`
 
 ## # [NODE.JS](https://nodejs.org/en/)
-* Use for NPM `package.jsno` file implemetation in to project root
+* Use for NPM `package.json` file implemetation in to project root
 
 ## # [NPM](https://www.npmjs.com/)
 * Package manager - Use package - `node-sass`
@@ -312,6 +312,28 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 ## # [BOOTSTRAP v4.5.2](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 * Bootstrap was used to assist with the responsiveness and styling of the website
 * Mani layout control - responsive layout usage - helper classes included - example -  .mt, .pt, .d-none .d-md-block, .col, col-sm, col-md, col-lg, etc...
+
+## # [PYTHON 3.9.2](https://www.python.org/)
+* Used for project back-end logic, to run [app.py](), [routes.py](), [from.py]()  files for full website functionalities
+* Python Modules used (Full list in [requirements.txt]):
+  * _Flask==1.1.2_
+  * _dnspython==2.1.0_
+  * _Flask-Login==0.5.0_ 
+  * _Flask-PyMongo==2.3.0_
+  * _Flask-WTF==0.14.3_
+  * _Jinja2==2.11.2_
+  * _mongoengine==0.22.1_
+  * _pymongo==3.11.3_
+  * _Werkzeug==1.0.1_
+  * _WTForms==2.3.3_
+
+## # [MongoDB](https://www.mongodb.com/1)
+* Used to create the document-based databases(collections)
+* Used as data storage for this users registration and login details
+* Used as data storage for user post(tips) details
+
+## # [HEROKU](https://www.heroku.com)
+
 
 
 ## # [GOOGLE CDN's](https://fonts.google.com/) and [GOOGLE API](https://developers.google.com/maps/gmp-get-started#quickstart)
@@ -415,5 +437,6 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 ## # [BALSAMIQ WIREFRAMES](https://balsamiq.com/) 
 * Wireframes Design
 
-
+## # [AM I Responsive?](http://ami.responsivedesign.is/)
+* Multi-Device Website Mockup Generator was used to create the Mock up image in this README
 
