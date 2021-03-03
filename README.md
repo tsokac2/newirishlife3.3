@@ -505,25 +505,37 @@ DB connection details are stored in an env.py for development, for security reas
 * Use `git push` command in CMD for code commits 
 
 ### DEPLOYMENT TO HEROKU
-**Create application:**
-**1.** Navigate to [HEROKU](https:www.heroku.com) and log in.
+#### Create application:
+**1.** Navigate to [HEROKU](https:www.heroku.com) and log in
+
 **2.** Click on the new button
+
 **3.** Select create a new app
+
 **4.** Enter the app name
+
 **5.** Select region
 
-**Configure connection to Github Repository**
+#### Configure connection to Github Repository
 **1.** Click the **_Deploy_** tab and select **_GitHub - Connect to GitHub_**
+
 **2.** Select GitHub
+
 **3.** Enter the repository name for the project and click search
+
 **4.** When repo has been found, click the connect button
 
-**Set environment variables:**
+#### Set environment variables:
 * Click the **_Settings_** tab and then click the **_Reveal Config Vars_** button and add the following:
+
   **1.** KEY: IP | VALUE: _0.0.0.0_
+
   **2.** KEY: PORT | VALUE:  _5000_
+
   **3.** KEY: _MONGO-DBNAME_ | VALUE: _your-data-base-name_
+
   **4.** KEY: _MONGO-URI_ | VALUE: mongodb+srv://root:YOUR-DB-PASSWORD@myfirstcluster.wdpoy.mongodb.net/your-data-base-name?retryWrites=true&w=majority
+  
   **5.** KEY: _SECRET-KEY_ | VALUE: _your-secret_key_ - [Random Key Generator](https://randomkeygen.com/)
 
 **Enable automatic deployment:**
