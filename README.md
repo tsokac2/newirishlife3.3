@@ -551,7 +551,8 @@ DB connection details are stored in an env.py for development, for security reas
 * _PORT_
 * _MONGO-URI_
 * _MONGO-DBNAME_
-* _SECRET-KEY_ 
+* _SECRET-KEY_
+
 **_These details are private and not disclosed in this repository for security purposes._**
 
 Once the project has been loaded into an IDE of choice, run the following command in the shell to install all the required packages:
