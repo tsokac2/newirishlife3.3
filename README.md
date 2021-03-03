@@ -504,19 +504,19 @@ DB connection details are stored in an env.py for development, for security reas
 * Make regular commits after every project change with proper commit message more info in [Git Commit Message](https://chris.beams.io/posts/git-commit/#separate)
 * Use `git push` command in CMD for code commits 
 
-### DEPLOYMENT TO HEROKU
-#### Create application:
-**1.** Navigate to [HEROKU](https:www.heroku.com) and log in
+## DEPLOYMENT TO HEROKU
+### Create application:
+**1.** Navigate to [HEROKU](https://id.heroku.com/login) and log in
 
-**2.** Click on the new button
+**2.** Click on the _new_ button
 
-**3.** Select create a new app
+**3.** Select create a _new app_
 
 **4.** Enter the app name
 
 **5.** Select region
 
-#### Configure connection to Github Repository
+### Configure connection to Github Repository
 **1.** Click the **_Deploy_** tab and select **_GitHub - Connect to GitHub_**
 
 **2.** Select GitHub
@@ -525,7 +525,7 @@ DB connection details are stored in an env.py for development, for security reas
 
 **4.** When repo has been found, click the connect button
 
-#### Set environment variables:
+### Set environment variables:
 * Click the **_Settings_** tab and then click the **_Reveal Config Vars_** button and add the following:
 
   **1.** KEY: IP | VALUE: _0.0.0.0_
@@ -534,19 +534,22 @@ DB connection details are stored in an env.py for development, for security reas
 
   **3.** KEY: _MONGO-DBNAME_ | VALUE: _your-data-base-name_
 
-  **4.** KEY: _MONGO-URI_ | VALUE: mongodb+srv://root:YOUR-DB-PASSWORD@myfirstcluster.wdpoy.mongodb.net/your-data-base-name?retryWrites=true&w=majority
-  
+  **4.** KEY: _MONGO-URI_ | VALUE: _(mongo uri - This can be found in MongoDB by going to clusters > connect > connect to your application and substituting the password and dbname that you set up in the link)_
+
   **5.** KEY: _SECRET-KEY_ | VALUE: _your-secret_key_ - [Random Key Generator](https://randomkeygen.com/)
 
-**Enable automatic deployment:**
+### Enable automatic deployment:
 **1.** Select _Deploy_ tab and  click _Enable Automation Deploys_
+
 **2.** Click the _Deploy_ button
+
 **3.** When the app is created check the logs for deployment errors, if none, click the _"View"_ button
 
-**LOCAL HOSTING**
+### LOCAL HOSTING
 **Note: The project will not run locally with database connections unless the user sets up an `env.py` file configuring _IP_, _PORT_, _MONGO-URI_, _MONGO-DBNAME_, and _SECRET-KEY_. These details are private and not disclosed in this repository for security purposes.**
 
 Once the project has been loaded into an IDE of choice, run the following command in the shell to install all the required packages:
+
 `pip install -r requirements.txt` 
 
 
