@@ -275,9 +275,35 @@ _**SASS IMPLEMENTATION AND FOLDER STRUCTURE**_
   * **SASS RESPONSIVE Mixins** function [EXAMPLE]()
 * All files in the above folders **MUST** be named with the following naming conventions: `_filename.scss`
 
+## # JAVASCRIPT
+Features: _Dom Events_, _Validation of User’s Input_, _Else and If Statement_, _Handling Events_,  _In Built Function_
 
+## #JQUERY
+**APPLIED jQuery DOM EVENTS** for highlighting **_"Quick Links"_** cards elements
 
+_TRIP_, _WORK_, and _LIFE_ sections are containing **_Quick Links_** card elements.
 
+Every card element contains the _MAIN LINK_ source to the external services provider and a **_"Quick Links..."_** button element for loading detailed links when the user chose the services provider destination. [EXAMPLE]()
+
+**_base.html_** template contains <div class="blur"> just after opening tag for the background _"fade-out"_ effect
+
+**jQuery DOM Events** used for above-mentioned cards element functionality:
+
+* Element with id **#showLinks1** was clicked
+* `var thisCardLinkShow = "." + this.id + "-grid";` checking for `<div>` element with class `.showLinks1-grid`
+* `$(thisCardLinkShow).show(300)` referring to `this` element to `.show()` with speed of 300 milliseconds
+* `$(".blur").fadeIn(400)` loading background "blur" effect with speed of 400 milliseconds
+* `$(thisCardLinkShow).addClass("rel-card");` adding class `.addClass("rel-card")` to element that is referring to `this` element
+* `$("#Card1").addClass("wrap-rel");`  adding class `.addClass("rel-card")` to element with id **Card1**
+
+The process is replicated for the `<button id="#hideLinks1">` element with the id of `#hideLinks1` for the "hiding" effect with `.removeClass("wrap-rel");` - [SOURCE CODE]() from lines **9 - 14** 
+
+If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that is achieved with following `.click()` DOM effect on `<div class="blur>`.
+`.blur` element contains absolute position properties with a z-index of 1000: [SOURCE CODE]() from lines **34 - 38** 
+
+**FULL SOURCE CODE:** for jQuery Cards DOM Events [cards.js]()
+
+**FULL LIBRARY SOURCE:** - https://code.jquery.com/
 
 
 
