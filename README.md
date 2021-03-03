@@ -251,6 +251,7 @@ Expansion plan:
 * SASS Variables
 * SASS Nesting
 * SASS Compiler
+
 **COMPILER IMPLEMENTATION:**
 * Open Command Prompt
 * Navigate to the root project folder
