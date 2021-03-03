@@ -244,9 +244,35 @@ Expansion plan:
 ### # CSS3
 **Modules:** Borders, Background and text-effects, Flexible Box Layout, CSS Grid Layout, CSS Transitions, CSS Image Values & Replaced Content, CSS Values & Units
 
-### # SASS Pre-processor
-
-
+### # SASS PRE-PROCESSOR
+**TOOLS INCLUDED**
+* SASS interpolation
+* SASS Mixings - Responsive layout functions
+* SASS Variables
+* SASS Nesting
+* SASS Compiler
+**COMPILER IMPLEMENTATION:**
+* Open Command Prompt
+* Navigate to the root project folder
+* Enter commands in the following order:
+  * `npm init --yes` - **PRESS ENTER**
+  * `npm i -g node-sass` - **PRESS ENTER**
+  * In `{} package.json` file under the `"scripts"` type the [FOLLOWING]()
+* To start **SASS Compiler** enter the following command: `npm run watch` - **PRESS ENTER**
+* If no errors the compilation process _NPM SERVER_ will start with the following console log message:
+    ```
+    > new@1.0.0 watch C:\Users\Tomislav\Desktop\new
+    > node-sass -o assets/css assets/scss/index.scss -w
+    ```
+_**SASS IMPLEMENTATION AND FOLDER STRUCTURE**_
+* Create the following folder structure:
+  * assets/scss/abstracts - global SASS **variables** and **mixins** function
+  * assets/scss/base - global styles for html, body and special helper classes
+  * assets/scss/components - carousel image slideshow, small screen navigation menu
+  * assets/scss/layout - styling for _HOME_, _TRIP_, _WORK_, _LIFE_, _TIPS_, _SIGN UP_, _LOGIN_
+  * assets/scss/_index.scss - referencing all `*.scss` files in folder structure, [EXAMPLE]()
+  * **SASS RESPONSIVE Mixins** function [EXAMPLE]()
+* All files in the above folders **MUST** be named with the following naming conventions: `_filename.scss`
 
 
 
