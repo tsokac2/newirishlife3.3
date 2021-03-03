@@ -400,5 +400,7 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 * Library provider: https://jasmine.github.io
 * Full testing and implementation process described in [TESTING.MD]() file 
 
+## # [FONTAWESOME](https://fontawesome.com/) 
+* Use mostly for menu items and across projects elements
 
 
