@@ -546,7 +546,13 @@ DB connection details are stored in an env.py for development, for security reas
 **3.** When the app is created check the logs for deployment errors, if none, click the _"View"_ button
 
 ### LOCAL HOSTING
-**Note: The project will not run locally with database connections unless the user sets up an `env.py` file configuring _IP_, _PORT_, _MONGO-URI_, _MONGO-DBNAME_, and _SECRET-KEY_. These details are private and not disclosed in this repository for security purposes.**
+**Note:** The project will not run locally with database connections unless the user sets up an `env.py` file configuring the following
+* _IP_
+* _PORT_
+* _MONGO-URI_
+* _MONGO-DBNAME_
+* _SECRET-KEY_ 
+**_These details are private and not disclosed in this repository for security purposes._**
 
 Once the project has been loaded into an IDE of choice, run the following command in the shell to install all the required packages:
 
