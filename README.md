@@ -314,7 +314,7 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 * Mani layout control - responsive layout usage - helper classes included - example -  .mt, .pt, .d-none .d-md-block, .col, col-sm, col-md, col-lg, etc...
 * Library provider: https://getbootstrap.com
 
-## # [GOOGLE CDN's](https://fonts.google.com/) and [GOOGLE API] (https://developers.google.com/maps/gmp-get-started#quickstart)
+## # [GOOGLE CDN's](https://fonts.google.com/) and [GOOGLE API](https://developers.google.com/maps/gmp-get-started#quickstart)
 * Google Fonts - [Merienda](https://fonts.google.com/specimen/Merienda?preview.text=&preview.text_type=custom&query=mer)
 * Google Fonts - [Lato](https://fonts.google.com/?preview.text=&preview.text_type=custom&query=LATO)
 * Google Fonts - [Josefin](https://fonts.google.com/specimen/Josefin+Sans?preview.text_type=custom)
@@ -400,10 +400,11 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 ## # [GIT](https://git-scm.com/)
 * Distributed version control system
 
-## # [GITHUB] (https://github.com/)
+## # [GITHUB](https://github.com/)
 * Project files hosting platform
 
 ## # [IDE Visual Studio Code](https://code.visualstudio.com/)
+* Project code editor 
 
 ## # [ADOBE PHOTOSHOP](https://www.adobe.com/)
 * Images preparation - Logo Design
