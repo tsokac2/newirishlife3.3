@@ -238,7 +238,8 @@ Expansion plan:
 
 # TECHNOLOGIES USED
 
-### **# HTML**
+### # HTML
+**Semantic elements**: _nav_, _section_, _footer_, _div_(content division element), _span_(inline container), _i_ (text element)
 
 
 
