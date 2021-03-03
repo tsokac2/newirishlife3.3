@@ -275,6 +275,12 @@ _**SASS IMPLEMENTATION AND FOLDER STRUCTURE**_
   * **SASS RESPONSIVE Mixins** function [EXAMPLE]()
 * All files in the above folders **MUST** be named with the following naming conventions: `_filename.scss`
 
+## # NODE.JS
+* Open-source, cross-platform, back-end, JavaScript runtime environment - href="https://nodejs.org/en/
+
+## # NPM
+* Package manager - Use package - `node-sass` - https://www.npmjs.com/
+
 ## # JAVASCRIPT
 Features: _Dom Events_, _Validation of User’s Input_, _Else and If Statement_, _Handling Events_,  _In Built Function_
 
@@ -388,6 +394,6 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
 
 * To submit user data to the server we are declaring `send()` function in variable `var send = function(){...};` and calling that function when submit `<button>` is triggered - [CODE EXAMPLE]() from lines **60 - 76**
 
-* Validation tests are covered in [TESTING](A)
+* Validation tests are covered in [TESTING.MD](A) file
 
 
