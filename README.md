@@ -557,7 +557,11 @@ DB connection details are stored in an env.py for development, for security reas
 
 Once the project has been loaded into an IDE of choice, run the following command in the shell to install all the required packages:
 
-`pip install -r requirements.txt` 
+`pip install -r requirements.txt`
+
+When the project is fully configured to start _localhost_ server, in CMD navigate to project root folder and start a server with the following command: `python app.py`
+
+In the web browser of your choice type: _localhost:5000_ to preview the project
 
 
 # CREDITS
