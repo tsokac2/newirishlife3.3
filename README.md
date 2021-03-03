@@ -370,12 +370,11 @@ If user click anywhere on the screen _"loaded"_ elements will _"hide"_ and that 
     date_created: 2021-02-28T11:25:00.557+00:00
   }
   ```
+**DATABASE SECURITY**
+DB connection details are stored in an env.py for development, for security reasons, this is not uploaded to GitHub so that database and connection details are not visible to the public and end-users.
 
 ## # [HEROKU](https://www.heroku.com)
 * Cloud platform service used for hosting a "live" version of the project
-
-**IMPLEMENTATION STEPS:**
-
 
 ## # [GOOGLE CDN's](https://fonts.google.com/) and [GOOGLE API](https://developers.google.com/maps/gmp-get-started#quickstart)
 * Google Fonts - [Merienda](https://fonts.google.com/specimen/Merienda?preview.text=&preview.text_type=custom&query=mer)
