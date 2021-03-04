@@ -565,8 +565,8 @@ In the web browser of your choice type: `localhost:5000` to preview the project
 
 
 # CREDITS
-* Intro pitch - *"The Hobbit: An Unexpected Journey"* - Wiki - https://en.wikipedia.org/wiki/The_Hobbit_(film_series)
-* Website images source - [UNSPLASH](https://unsplash.com/s/photos/smartphone
+* Intro pitch - [*"The Hobbit: An Unexpected Journey"*](https://en.wikipedia.org/wiki/The_Hobbit_(film_series))
+* Website images source - [UNSPLASH](https://unsplash.com/s/photos/smartphone)
 * Website images source - [PIXABAY](https://pixabay.com/photos)
   * [User: wiredsmartio](https://pixabay.com/users/wiredsmartio-14931632/)
   * [User: geralt](https://pixabay.com/users/geralt-9301/)
@@ -579,9 +579,9 @@ In the web browser of your choice type: `localhost:5000` to preview the project
 * Home page icons - [Flaticon](https://www.flaticon.com/)
 
 ### CODE
-* Bootstrap Carousel Fade Effect - [Source](https://silvawebdesigns.com/how-to-change-the-bootstrap-4-carousel-to-a-fade-transition-instead-of-slide/)
-* Resizing Google Maps markers  - [Source](https://stackoverflow.com/questions/15096461/resize-google-maps-marker-icon-image)
-* Jasmine-jQuery: Set of jQuery helpers - [Source](https://bowercdn.net/c/jasmine-jquery-2.1.1/lib/jasmine-jquery.js)
+* [Bootstrap Carousel Fade Effect](https://silvawebdesigns.com/how-to-change-the-bootstrap-4-carousel-to-a-fade-transition-instead-of-slide/)
+* [Resizing Google Maps markers](https://stackoverflow.com/questions/15096461/resize-google-maps-marker-icon-image)
+* [Jasmine-jQuery: Set of jQuery helpers](https://bowercdn.net/c/jasmine-jquery-2.1.1/lib/jasmine-jquery.js)
 
 ### ACKNOWLEDGEMENTS
 Special thanks to the following people for their help with my project:
