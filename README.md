@@ -13,7 +13,7 @@ This website is a great starting point.
     * [Testing User Stories from User Experience (UX)](Testing-User-Stories-from-User-Experience-(UX))
     * [Design process](Design-process)
 * [Features](#FEATURES)
-    * [HOME]#(HOME)
+    * [HOME](#HOME)
     * [TRIP](#TRIP)
     * [WORK](#WORK)
     * [LIFE](#LIFE)
