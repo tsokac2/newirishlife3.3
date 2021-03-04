@@ -7,6 +7,12 @@ This website is a great starting point.
 
 ![Website Main Mockup](https://github.com/tsokac2/newIrishLife.2.0/blob/main/assets/wireframes/main.png)
 
+## Table of Contents
+* [User Experience Design (UX)](#UX)
+  * [User Story](#User Story)
+* [Credits](#Credits)
+
+
 # UX
 
 **Story:**
