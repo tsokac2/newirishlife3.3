@@ -587,5 +587,5 @@ In the web browser of your choice type: `localhost:5000` to preview the project
 Special thanks to the following people for their help with my project:
 
 * Slack user [Simon Vardy]() for giving me an idea of using data to be displayed on the user profile page
-* Slack user [Ed Bradley]() - for testing project functionality, spotting couple CSS issues, and the idea of uploading images on S3 AWS as a project migration possibility.
+* Slack user [Ed Bradley](https://github.com/Edb83?tab=repositories) - for testing project functionality, spotting couple CSS issues, and the idea of uploading images on S3 AWS as a project migration possibility.
 * Anna Villanueva for always fun and informative mentorship sessions.
