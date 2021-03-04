@@ -10,7 +10,6 @@ This website is a great starting point.
 ## Table of Contents
 * [User Experience Design (UX)](#UX)
     * [User Story](#User-Story)
-    * [Testing User Stories from User Experience (UX)](#Testing-User-Stories-from-User-Experience-(UX))
     * [Design process](Design-process)
 * [Features](#FEATURES)
     * [Home](#HOME)
