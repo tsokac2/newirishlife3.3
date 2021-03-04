@@ -568,13 +568,13 @@ In the web browser of your choice type: `localhost:5000` to preview the project
 * Intro pitch - *"The Hobbit: An Unexpected Journey"* - Wiki - https://en.wikipedia.org/wiki/The_Hobbit_(film_series)
 * Website images source - [UNSPLASH](https://unsplash.com/s/photos/smartphone
 * Website images source - [PIXABAY](https://pixabay.com/photos)
-  * 1. [User](https://pixabay.com/users/wiredsmartio-14931632/)
-  * 2. [User](https://pixabay.com/users/geralt-9301/)
-  * 3. [User](https://pixabay.com/users/ds_30-1795490/)
-  * 4. [User](https://pixabay.com/users/pexels-2286921/)
-  * 5. [User](https://pixabay.com/users/firmbee-663163/)
-  * 6. [User](https://pixabay.com/users/wokandapix-614097/)
-  * 7. [User](https://pixabay.com/users/publicco-5009832/)
+  * [User: wiredsmartio](https://pixabay.com/users/wiredsmartio-14931632/)
+  * [User: geralt](https://pixabay.com/users/geralt-9301/)
+  * [User: ds_30](https://pixabay.com/users/ds_30-1795490/)
+  * [User: pexels](https://pixabay.com/users/pexels-2286921/)
+  * [User: firmbee](https://pixabay.com/users/firmbee-663163/)
+  * [User: wokandapix](https://pixabay.com/users/wokandapix-614097/)
+  * [User: publicco](https://pixabay.com/users/publicco-5009832/)
 
 * Home page icons - [Flaticon](https://www.flaticon.com/)
 
