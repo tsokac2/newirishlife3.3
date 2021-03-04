@@ -10,6 +10,22 @@ This website is a great starting point.
 ## Table of Contents
 * [User Experience Design (UX)](#UX)
     * [User Story](#User-Story)
+    * [Testing User Stories from User Experience (UX)](Testing-User-Stories-from-User-Experience-(UX))
+    * [Design process](Design-process)
+* [Features](FEATURES)
+    * [HOME](HOME)
+    * [TRIP](TRIP)
+    * [WORK](WORK)
+    * [LIFE](LIFE)
+    * [TIPS](TIPS)
+    * [SIGN UP](SIGN-UP)
+    * [LOGIN](LOGIN)
+    * [PROFILE](PROFILE)
+    * [ADD TIP](ADD-TIP)
+
+* [TECHNOLOGIES USED](TECHNOLOGIES-USED)
+* [TESTING](TESTING)
+* [DEPLOYMENT](DEPLOYMENT)
 * [Credits](#Credits)
 
 
@@ -592,6 +608,6 @@ In the web browser of your choice type: `localhost:5000` to preview the project
 ### ACKNOWLEDGEMENTS
 Special thanks to the following people for their help with my project:
 
-* Slack user [Simon Vardy]() for giving me an idea of using data to be displayed on the user profile page
+* Slack user [Simon Vardy]( https://github.com/simonjvardy) for giving me an idea of using data to be displayed on the user profile page
 * Slack user [Ed Bradley](https://github.com/Edb83?tab=repositories) - for testing project functionality, spotting couple CSS issues, and the idea of uploading images on S3 AWS as a project migration possibility.
 * Anna Villanueva for always fun and informative mentorship sessions.
