@@ -1,5 +1,7 @@
 import os
-from flask import Flask, flash, render_template, redirect, request, session, url_for
+from flask import (
+    Flask, flash, render_template, redirect,
+    request, session, url_for)
 from forms import RegisterForm, LoginForm, AddTip
 from flask_pymongo import PyMongo
 import datetime
@@ -16,10 +18,12 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template("home.html", title="| Travel | Work | Experience | Life Style")
+    return render_template(
+        "home.html", title="| Travel | Work | Experience | Life Style")
 
 
 @app.route("/trip")
@@ -76,16 +80,15 @@ def login():
     if form.validate_on_submit():
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
-        
         if existing_user:
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
+                    existing_user["password"], request.form.get("password")):
                 session["user"] = request.form.get("username").lower()
-                return redirect(url_for("profile", username=session["user"]))
+                return redirect(url_for(
+                    "profile", username=session["user"]))
             else:
-                 flash("Incorrect Username and/or Password", "reg-danger")
-                 return redirect(url_for("login"))
-        
+                flash("Incorrect Username and/or Password", "reg-danger")
+                return redirect(url_for("login"))
         else:
             flash("Incorrect Username and/or Password", "reg-danger")
             return redirect(url_for("login"))
@@ -96,9 +99,11 @@ def login():
 def profile(username):
     user = mongo.db.users.find_one({"username": session["user"]})
     if session["user"]:
-        return render_template("profile.html", username=user["username"], 
-                                email=user["email"], date_created=user["date_created"])
-    return render_template("profile.html", title="| Profile", username=username)
+        return render_template(
+            "profile.html", username=user["username"], email=user["email"],
+            date_created=user["date_created"])
+    return render_template(
+        "profile.html", title="| Profile", username=username)
 
 
 @app.route("/logout")
@@ -124,7 +129,8 @@ def add_tip():
         return redirect(url_for("tips"))
 
     categories = mongo.db.categories.find().sort("tip_category", 1)
-    return render_template("add_tip.html", title="| Add Tip", form=form, categories=categories)
+    return render_template(
+        "add_tip.html", title="| Add Tip", form=form, categories=categories)
 
 
 @app.route("/update_tip/<tip_id>", methods=["GET", "POST"])
@@ -157,7 +163,7 @@ def delete_tip(tip_id):
 def delete_user():
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    mongo.db.users.remove({"username":username})
+    mongo.db.users.remove({"username": username})
     flash("Your profile is deleted!", "profile-deleted")
     session.pop("user")
     return redirect("registration")
@@ -167,14 +173,13 @@ def delete_user():
 @app.errorhandler(404)
 def not_found_error(error):
     flash("ERROR 404 - Page Not Found", "error-404")
-    return render_template ("home.html", error=error), 404
+    return render_template("home.html", error=error), 404
 
 
 @app.errorhandler(500)
 def internal_error(error):
     flash("ERROR 500 - Page Not Found", "error-500")
-    return render_template ("home.html", error=error), 500
-   
+    return render_template("home.html", error=error), 500
 
 
 if __name__ == "__main__":
