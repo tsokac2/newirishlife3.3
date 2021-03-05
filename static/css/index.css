@@ -1557,11 +1557,13 @@ body {
             font-size: 2.5rem; } }
       @media (min-width: 768px) {
         .large-menu-wrap .large-left-menu a {
-          width: 7.3rem;
+          font-size: 1.5rem;
+          width: 7rem;
           letter-spacing: 1px; } }
       @media (min-width: 992px) {
         .large-menu-wrap .large-left-menu a {
-          width: 9.7rem; } }
+          font-size: 1.8rem;
+          width: 9.4rem; } }
       @media (min-width: 1200px) {
         .large-menu-wrap .large-left-menu a {
           width: 11.7rem;
