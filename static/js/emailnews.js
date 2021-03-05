@@ -2,7 +2,7 @@ var newsletter = function(){
     document.getElementById("newsSent").addEventListener("click", send);
 };
 
-var validateName = function(e) {
+var validateName = function() {
     var valid;
     var name = document.getElementById("newsName");
     var nameValue = name.value.trim();
@@ -21,7 +21,7 @@ var validateName = function(e) {
     return valid;
 };
 
-var validateEmail = function(e) {
+var validateEmail = function() {
     var valid;
     var email = document.getElementById("newsEmail");
     var emailValue = email.value.trim();
@@ -75,7 +75,7 @@ var send = function(e) {
     }
 };
 
-var reset = function (e){
+var reset = function (){
     document.getElementById("newsForm").reset();
 };
 
@@ -85,7 +85,7 @@ function TnxForSupport(tnxMessage) {
     tnx.innerText = tnxMessage;
 }
 
-function sendEmail(inputs) {
+function sendEmail() {
     var tempInputs = {
         "from_name": document.getElementById("newsName").value,
         "from_email": document.getElementById("newsEmail").value

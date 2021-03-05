@@ -15,6 +15,7 @@ var validateName = function(inputValue) {
 
 var validateEmail = function(inputValue) {
     var valid;
+    var testEmail;
     var inputEmail = inputValue;
     if(inputEmail === "") {
         valid = false;
@@ -27,19 +28,7 @@ var validateEmail = function(inputValue) {
     return valid;
 };
 
-function pushErrorFor(input, errorMessage) {
-    var formControl = input.parentElement;
-    var small = formControl.querySelector("small");
-    formControl.className = "form-group error";
-    small.innerText = errorMessage;
-}
-
-function pushSuccessFor(input) {
-    var formControl = input.parentElement;
-    formControl.className = "form-group success";
-}
-
-var send = function() {
+var send = function(e) {
     e.preventDefault();
     e.stopPropagation();
 
@@ -67,7 +56,7 @@ function TnxForSupport(tnxMessage) {
     tnx.innerText = tnxMessage;
 }
 
-function sendEmail(inputs) {
+function sendEmail() {
     var tempInputs = {
         "from_name": document.getElementById("newsName").value,
         "from_email": document.getElementById("newsEmail").value
