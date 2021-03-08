@@ -1902,7 +1902,8 @@ body {
       .cards-wrap-reg .wrap .flip-card-inner-wrap .front-card {
         margin: 0;
         -webkit-backface-visibility: hidden;
-        backface-visibility: hidden; }
+        backface-visibility: hidden;
+        transform: rotateX(0deg); }
       .cards-wrap-reg .wrap .flip-card-inner-wrap .back-card {
         display: none;
         position: absolute;
