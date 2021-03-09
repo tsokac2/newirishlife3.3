@@ -5,7 +5,7 @@
     * [JSHint Validator](#JSHint-Validator)
     * [PEP8 Validator](#PEP8-Validator)
 * [Test Cases Description and Results](#Test-Cases-Description-and-Results)
-* [Local Base Validators](#Local-Based-Validators)
+* [Local Based Validators](#Local-Based-Validators)
   * [Python Unit Testing Framework](#Python-Unit-Testing-Framework)
   * [Jasmine](#Jasmine)
 * [W3 Validator Error's and Solutions](#W3-Validator-Error's-and-Solutions)
@@ -58,7 +58,7 @@ Full test results can be found in an excel document **[HERE]()**
 
 ****
 
-## Local Base Validators
+## Local Based Validators
 
 ### [Python Unit Testing Framework](https://docs.python.org/3/library/unittest.html)
 Testing was processed to ensure that routing functionality is redirecting users to the requested page route.
