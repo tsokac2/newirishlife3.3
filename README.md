@@ -510,7 +510,32 @@ DB connection details are stored in an env.py for development, for security reas
 
 # TESTING
 
+### Strategy and planning
+* Testing is required on all features and user stories documented in this README.
+* All clickable links must redirect to the correct pages
+* HTML Code must pass through the [W3C HTML Validator](https://validator.w3.org/#validate_by_uri).
+* CSS Code must pass through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+* JavaScript code must pass through the [JSHint Validator](https://jshint.com/).
+* Python Code must pass through [PEP8 Validator](http://pep8online.com/).
+
+### Access Requirements
+The tester must have access to MongoDB to manually verify the insertion of records to users and tips collections.
+
+### Regression Testing
+All features previously tested during development in a local environment must be regression tested in production on the live website.
+
+### Assumptions and Dependencies
+Testing is dependent on the website being deployed live on Heroku.
+
+### Out of Scope
+Only test cases listed under High-Level Test Cases will be performed as part of this testing effort.
+
 ### Test Cases and Description
+Only test cases listed under High-Level Test Cases will be performed as part of this testing effort.
+
+### Test Results
+All processed test and result are described in details [HERE](TESTING.md)
+
 
 ![Test Cases](https://github.com/tsokac2/newirishlife3.3/blob/main/static/wireframes/test_cases.PNG)
 
