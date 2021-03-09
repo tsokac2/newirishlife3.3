@@ -51,7 +51,7 @@ Full test results can be found in an excel document **[HERE]()**
 
 ## Local Base Validators
 
-### [Unit Testing](https://docs.python.org/3/library/unittest.html)
+### [Python Unit Testing Framework](https://docs.python.org/3/library/unittest.html)
 Testing was processed to ensure that routing functionality is redirecting users to the requested page route.
 
 #### Testing covered:
@@ -62,58 +62,15 @@ Testing was processed to ensure that routing functionality is redirecting users 
 * Test **Tips** page load response
 * Test **Sign Up** page load response
 * Test **Login** page load response
-* Command line 8 [Tests Result]() 
+* Command line 8 [Tests Result]()
+
+### [Jasmine](https://jasmine.github.io/)
+Behaviour-driven development framework for testing JavaScript code
+
+#### Testing DOM Events Using jQuery and Jasmine 2.0
+**IMPLEMENTATION**
 
 
-### W3 Validator Error's and Solutions VALIDATOR ERROR's and SOLUTIONS
 
-**ISSUE #1**
- _Error_: Duplicate ID username - `<input type="text" id="username" placeholder="Username or Email">`
 
- _SOLUTION_: Create unique  ID - `id="username"` for Sign Up form  - `id="username-log"` for Login form
 
-**ISSUE #2**
-_Error_: Bad value `public\img\Logo.png` for attribute src on element img: Backslash ("\") used as path segment delimiter.
-
-`<img src="assets\img\Logo.png" width="100" alt="New Irish Logo"></a>`
-
-_SOLUTION_: `<img src="assets/img/Logo.png" width="100" alt="New Irish Logo"></a>` - change "\" to "/"
-
-**ISSUE #3**
-_Error_: The `aria-labelledby` attribute must point to an element in the same document.
-
-`<div class="modal fade" id="sing-in" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">`
-
-_SOLUTION_: ` <div class="modal fade" id="sing-in" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="sing-in" aria-hidden="true">`
-
-_SOLUTION SOURCE_ -  [Stackoverflow](https://stackoverflow.com/questions/39831658/how-to-fix-the-aria-labelledby-attribute-must-point-to-an-element-in-the-same-d)
-
-**ISSUE #4**
-_Error_: Duplicate attribute class.
-
-_SOLUTION_: Remove class duplicates in `<a href="https://www.jetcost.ie/" target="_blank" class="q-links a">FLIGHTS</a>`
-
-**ISSUE #5**
-_Error_: The type attribute is unnecessary for JavaScript resources
-
-_SOLUTION_: Remove type attribute from`<script  src="assets/js/emailnews.js"></script>`
-
-**ISSUE #6**
-_Error_: No space between attributes
-
-_SOLUTION_: Add space between `<script>` and `src=""` attribute in `<script  src="assets/js/emailnews.js"></script>`
-
-**ISSUE #7**
-_Error_: Start tag seen without seeing a doctype first. Expected `<!DOCTYPE html>`
-
-_SOLUTION_: Add doctype before opening `<html>` DOM element
-
-**ISSUE #8**
-_Error_: `.section-home .quote p` 	Value Error : font-size only 0 can be a unit. You must put a unit after your number : 1.5
-
-_SOLUTION_: Add unit type after font-size property value `font-size: 1.5rem;`
-
-**ISSUE #9**
-_Error_: `.section-home .intro-pitch .pitch-wrap .composition` Value Error : margin-top  2rem is not a margin-top value :  2rem
-
-_SOLUTION_: Remove extra space in `margin-top:  2rem;` to `margin-top: 2rem;`
