@@ -5,7 +5,7 @@ Finding work, a place to stay where to buy good cheap food in Ireland can be dif
 advice, and planning this task can be made a lot easier.
 This website is a great starting point.
 
-![Website Main Mockup](https://github.com/tsokac2/newIrishLife.2.0/blob/main/assets/wireframes/main.png)
+![Website Main Mockup](https://github.com/tsokac2/newirishlife3.3/blob/main/static/wireframes/W3_Main.png)
 
 ## Table of Contents
 * [User Experience Design (UX)](#UX)
@@ -477,7 +477,7 @@ DB connection details are stored in an env.py for development, for security reas
 
 * To submit user data to the server we are declaring `send()` function in variable `var send = function(){...};` and calling that function when submit `<button>` is triggered - [CODE EXAMPLE]() from lines **60 - 76**
 
-* Validation tests are covered in [TESTING.MD](A) file
+* Validation tests are covered in [TESTING.MD]() file
 
 ## # [JASMINE BEHAVIOR-DRIVEN JavaScript](https://jasmine.github.io)
 * Full testing and implementation process described in [TESTING.MD]() file 
