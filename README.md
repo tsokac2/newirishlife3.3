@@ -534,7 +534,7 @@ Only test cases listed under High-Level Test Cases will be performed as part of 
 Only test cases listed under High-Level Test Cases will be performed as part of this testing effort.
 
 ### Test Results
-All processed test and result are described in details [HERE](TESTING.md)
+All processed test and result are described in details [HERE](https://github.com/tsokac2/newirishlife3.3/blob/main/TESTING.MD)
 
 
 ![Test Cases](https://github.com/tsokac2/newirishlife3.3/blob/main/static/wireframes/test_cases.PNG)
