@@ -8,8 +8,8 @@
 * [Local Based Validators](#Local-Based-Validators)
   * [Python Unit Testing Framework](#Python-Unit-Testing-Framework)
   * [Jasmine](#Jasmine)
-* [W3 Validator Error's and Solutions](#W3-Validator-Error's-and-Solutions)
-* [Developer Tools Console Logs Error's and Solutions](#Developer-Tools-Console-Logs-Error's-and-Solutions)
+* [W3 Validator Errors and Solutions](#W3-Validator-Errors-and-Solutions)
+* [Developer Tools Console Logs Errors and Solutions](#Developer-Tools-Console-Logs-Errors-and-Solutions)
 
 
 ## Cloud Based Validators
@@ -166,7 +166,7 @@ Behaviour-driven development framework for testing JavaScript code.
 
 ****
 
-## W3 Validator Error's and Solutions
+## W3 Validator Errors and Solutions
 
 **ISSUE #1**
  _Error_: Duplicate ID username - `<input type="text" id="username" placeholder="Username or Email">`
@@ -219,7 +219,7 @@ _Error_: `.section-home .intro-pitch .pitch-wrap .composition` Value Error : mar
 
 _SOLUTION_: Remove extra space in `margin-top:  2rem;` to `margin-top: 2rem;`
 
-## Developer Tools Console Logs Error's and Solutions
+## Developer Tools Console Logs Errors and Solutions
 
 **ISSUE #1**
 Error:  CSS background property - bad path property `background-image: url("../img/rent_fav.png");`
