@@ -263,6 +263,8 @@ Expansion plan:
 * Implement section regarding social events and gathering for necessary user connection expansion.
 * Offer **_"Jobs Adds"_** section for recruitment agencies  - a connection between end-user and possible employer or recruitment agent.
 
+****
+
 # TECHNOLOGIES USED
 
 ## # [HTML](https://en.wikipedia.org/wiki/HTML)
@@ -504,9 +506,12 @@ DB connection details are stored in an env.py for development, for security reas
 ## # [AM I Responsive?](http://ami.responsivedesign.is/)
 * Multi-Device Website Mockup Generator was used to create the project Mock up image
 
+****
+
 # TESTING
 
 
+****
 
 # DEPLOYMENT
 
@@ -587,6 +592,7 @@ When the project is fully configured to start _localhost_ server, in CMD navigat
 
 In the web browser of your choice type: `localhost:5000` to preview the project
 
+****
 
 # CREDITS
 * Intro pitch - [*"The Hobbit: An Unexpected Journey"*](https://en.wikipedia.org/wiki/The_Hobbit_(film_series))
