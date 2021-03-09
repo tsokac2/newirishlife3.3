@@ -518,6 +518,10 @@ DB connection details are stored in an env.py for development, for security reas
 * JavaScript code must pass through the [JSHint Validator](https://jshint.com/).
 * Python Code must pass through [PEP8 Validator](http://pep8online.com/).
 
+### Test Cases and Description
+
+![Test Cases](https://github.com/tsokac2/newirishlife3.3/blob/main/static/wireframes/test_cases.PNG)
+
 ### Access Requirements
 The tester must have access to MongoDB to manually verify the insertion of records to users and tips collections.
 
@@ -530,14 +534,8 @@ Testing is dependent on the website being deployed live on Heroku.
 ### Out of Scope
 Only test cases listed under High-Level Test Cases will be performed as part of this testing effort.
 
-### Test Cases and Description
-Only test cases listed under High-Level Test Cases will be performed as part of this testing effort.
-
 ### Test Results
 All processed test and result are described in details **[HERE](https://github.com/tsokac2/newirishlife3.3/blob/main/TESTING.MD)**
-
-
-![Test Cases](https://github.com/tsokac2/newirishlife3.3/blob/main/static/wireframes/test_cases.PNG)
 
 ****
 
