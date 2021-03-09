@@ -10,9 +10,8 @@
 
 ### [W3C HTML Validator](https://validator.w3.org/#validate_by_uri)
 Home
-![Test Results](https://github.com/tsokac2/newirishlife3.3/blob/main/static/wireframes/W3_H_Home.png)
-Trip
-![Test Results](https://github.com/tsokac2/newirishlife3.3/blob/main/static/wireframes/W3_H_Home.png)
+![Test Results](https://github.com/tsokac2/newirishlife3.3/blob/main/static/wireframes/W3_H_Home.png) Trip ![Test Results](https://github.com/tsokac2/newirishlife3.3/blob/main/static/wireframes/W3_H_Home.png)
+
 
 
 * HTML [Home]() Result
