@@ -167,6 +167,8 @@ there was a lot of info about life in Ireland, but not essentials information in
 * MAIN SECTIONS: Website features - HOME, TRIP, WORK, LIFE,  SIGN UP, LOGIN -- +TIPS | PROFILE
 * FOOTER: Footer Menu links - Newsletter Subtraction - Social Media links - Copyrights
 
+****
+
 # FEATURES
 
 ## HOME
@@ -608,7 +610,8 @@ In the web browser of your choice type: `localhost:5000` to preview the project
 ### ACKNOWLEDGEMENTS
 Special thanks to the following people for their help with my project:
 
-* Slack user [Simon Vardy]( https://github.com/simonjvardy) for giving me an idea of using data to be displayed on the user profile page
+* Slack user [Daisy McGirr](https://github.com/Daisy-McG) for inspiration on how to write README.MD for M3.
+* Slack user [Simon Vardy](https://github.com/simonjvardy) for giving me an idea of using data to be displayed on the user profile page.
 * Slack user [Ed Bradley](https://github.com/Edb83?tab=repositories) - for testing project functionality, spotting couple CSS issues, and the idea of uploading images on S3 AWS as a project migration possibility.
 * Anna Villanueva for always fun and informative mentorship sessions.
 
