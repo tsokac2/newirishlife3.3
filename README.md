@@ -510,6 +510,9 @@ DB connection details are stored in an env.py for development, for security reas
 
 # TESTING
 
+### Test Cases and Description
+
+![Test Cases](static/wireframes/test_cases.png)
 
 ****
 
