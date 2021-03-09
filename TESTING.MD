@@ -1,7 +1,16 @@
 ## Table of Contents
-* [Cloud-Based-Validators](#Cloud Based Validators)
-* [Test-Cases-Description-and-Results](#Test Cases Description and Results)
-* [Local-Base-Validators](#Local Base Validators)
+* [Cloud Based Validators](#Cloud-Based-Validators)
+    * [W3C HTML Validator](#W3C-HTML-Validator)
+    * [W3C CSS Validator](#W3C-CSS-Validator)
+    * [JSHint Validator](#JSHint-Validator)
+    * [PEP8 Validator](#PEP8-Validator)
+* [Test Cases Description and Results](#Test-Cases-Description-and-Results)
+* [Local Base Validators](#Local-Based-Validators)
+  * [Python Unit Testing Framework](#Python-Unit-Testing-Framework)
+  * [Jasmine](#Jasmine)
+* [W3 Validator Error's and Solutions](#W3-Validator-Error's-and-Solutions)
+* [Developer Tools Console Logs Error's and Solutions](#Developer-Tools-Console-Logs-Error's-and-Solutions)
+
 
 ## Cloud Based Validators
 
