@@ -64,6 +64,8 @@ Testing was processed to ensure that routing functionality is redirecting users 
 * Test **Login** page load response
 * Command line 8 [Tests Result]()
 
+**FULL SOURCE CODE:** [test.py]()
+
 ### [Jasmine](https://jasmine.github.io/)
 Behaviour-driven development framework for testing JavaScript code.
 
@@ -88,7 +90,67 @@ Behaviour-driven development framework for testing JavaScript code.
   * `<script src="../testing/scripts/cards.js"></script>`
   * `<script src="../testing/spec/cardsSpec.js"></script>`
 
+**TEST STEPS**
 
+* `setFixtures('<button id="showLinks1"</button>');`        - mimicking `<button>` element on line 265 in trip.html
+* `$('#showLinks1').on('click', function (){...}`           - referencing jQuery DOM events applied to `<button>` element
+* `var spyEventShow = spyOnEvent('#showLinks1', 'click');`  - creating variable var `var spyEventShow;`for invoking `spyOnEvent` on to `<button>` element
+* `$('#showLinks1').trigger('click');`                      - triggering DOM event
+* `expect(spyEventShow).toHaveBeenTriggered();`             - including `spyEventShow` variable in to `.toHaveBeenTriggered()` test instance
 
+**FULL SOURCE CODE:** [Jasmine - cardsSpec.js]()
 
+**Live Version** - [Cards Test]()
 
+#### Testing Validation Functions for EMAILJS API Newsletter services
+
+1. STEP: Create **testing** folder in project root folder - **../testing**
+
+2. STEP: Create **emailnewsSpec.js** file in to **../testing/spec** folder
+
+3. STEP: Create **emailnewstest.html** file in **testing** folder
+
+4. STEP: In **emailnewstest.html** create basic **<!DOCTYPE html>** structure with **`<html>`**, **`<head>`** opening and closing tags
+
+5. STEP: In the **`<head>`** element place **CDN** links in the following order - **CDN SOURCE:** https://cdnjs.com/libraries/jasmine :
+  * `<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.js"></script>`
+  * `<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine-html.js" ></script>`
+  * `<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/boot.js"></script>`
+  * `<script src="https://code.jquery.com/jquery-3.5.1.js"></script>`
+  * `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.css"/>` **SOURCE:** https://code.jquery.com/
+
+6. STEP: Import custom scripts for Jasmine testing under imported **CDN's** in the following order:
+  * `<script src="../testing/scripts/emailnews.js"></script>`
+  * `<script src="../testing/spec/emailnewsSpec.js"></script>`
+
+**TEST STEPS**
+
+* Testing if `validateName()` function exist
+
+  ```
+  describe("Validate Name", function(){
+    it("validateName() function should exist", function(){
+        expect(validateName).toBeDefined();
+    });
+  ```
+* Testing if `validateName()` function return **TRUE** if input `value.length` is > that 2
+
+  ```
+  it("validateName should return TRUE", function(){
+      var testPass = validateName("Tom");
+      expect(testPass).toBe(true);
+  });
+  ```
+
+* Testing if `validateName()` function return **FALSE** if input `value.length` is < that 2
+
+  ```
+  it("validateName should return FALSE", function(){
+      var testFaild = validateName("T");
+      expect(testFaild).toBe(false);
+  });
+  ```
+
+**FULL SOURCE CODE:** [Jasmine - emailnewsSpec.js]()
+
+**Live Version** - [Emailnews Test]()
