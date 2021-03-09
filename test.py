@@ -77,11 +77,4 @@ class AppTests(AppTestCase):
         assert res.status == "200 OK"
         assert "Already a member!" in data
 
-    def test_login_func(self):
-        """Test Login functionality"""
-        res = self.client.post("/login", data=dict(
-            username="tom",
-            password="password"
-            ))
-        data = res.data.decode("utf-8")
-        assert 'tom' in data
+    

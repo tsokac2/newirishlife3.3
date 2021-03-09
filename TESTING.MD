@@ -52,6 +52,15 @@ Full test results can be found in an excel document **[HERE]()**
 ## Local Base Validators
 
 ### [Unit Testing](https://docs.python.org/3/library/unittest.html)
-* Testing was processed to ensure that routing functionality is redirecting users to the requested page route.
-* Command line [test.py] Result
+Testing was processed to ensure that routing functionality is redirecting users to the requested page route.
+
+#### Testing covered:
+* Test **Home** page load response
+* Test **Trip** page load response
+* Test **Work** page load response
+* Test **Life** page load response
+* Test **Tips** page load response
+* Test **Sign Up** page load response
+* Test **Login** page load response
+* Command line 8 [Tests Result]() 
 
