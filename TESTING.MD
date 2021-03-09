@@ -36,20 +36,7 @@
 
 Full test results can be found in an excel document **[HERE]()**
 
-![Test Results](testing/test_results_1.JPG)
-![Test Results](testing/test_results_2.JPG)
-![Test Results](testing/test_results_3.JPG)
-![Test Results](testing/test_results_4.JPG)
-![Test Results](testing/test_results_5.JPG)
-![Test Results](testing/test_results_6.JPG)
-![Test Results](testing/test_results_7.JPG)
-![Test Results](testing/test_results_8.JPG)
-![Test Results](testing/test_results_9.JPG)
-![Test Results](testing/test_results_10.JPG)
-![Test Results](testing/test_results_11.JPG)
-![Test Results](testing/test_results_12.JPG)
-![Test Results](testing/test_results_13.JPG)
-
+![Test Results](https://github.com/tsokac2/newirishlife3.3/blob/main/static/wireframes/TC001.png)
 
 ## Local Base Validators
 
