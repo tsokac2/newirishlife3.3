@@ -512,7 +512,7 @@ DB connection details are stored in an env.py for development, for security reas
 
 ### Test Cases and Description
 
-![Test Cases](static/wireframes/test_cases.png)
+![Test Cases](https://github.com/tsokac2/newirishlife3.3/blob/main/static/wireframes/test_cases.PNG)
 
 ****
 
