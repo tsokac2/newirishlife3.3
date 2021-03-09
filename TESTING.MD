@@ -65,10 +65,28 @@ Testing was processed to ensure that routing functionality is redirecting users 
 * Command line 8 [Tests Result]()
 
 ### [Jasmine](https://jasmine.github.io/)
-Behaviour-driven development framework for testing JavaScript code
+Behaviour-driven development framework for testing JavaScript code.
 
 #### Testing DOM Events Using jQuery and Jasmine 2.0
-**IMPLEMENTATION**
+1. STEP: Create **testing** folder in project root folder - **../testing**
+
+2. STEP: Create **cardsSpec.js** file in to **../testing/spec** folder
+
+3. STEP: Create **cardstest.html** file in **testing** folder
+
+4. STEP: In **cardstest.html** create basic **<!DOCTYPE html>** structure with **`<html>`**, **`<head>`** opening and closing tags
+
+5. STEP: In the **`<head>`** element place **CDN** links in the following order - **CDN SOURCE:** https://cdnjs.com/libraries/jasmine :
+  * `<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.js"></script>`
+  * `<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine-html.js" ></script>`
+  * `<script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/boot.js"></script>`
+  * `<script src="https://code.jquery.com/jquery-3.5.1.js"></script>`
+  * `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.css"/>` **SOURCE:** https://code.jquery.com/
+  * `<script src="../testing/libraries/jasminejquery.js"></script>` external library **SOURCE:** https://bowercdn.net/c/jasmine-jquery-2.1.1/lib/jasmine-jquery.js  
+
+6. STEP: Import custom scripts for Jasmine testing under imported **CDN's** in the following order:
+  * `<script src="../testing/scripts/cards.js"></script>`
+  * `<script src="../testing/spec/cardsSpec.js"></script>`
 
 
 
