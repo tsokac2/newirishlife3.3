@@ -517,6 +517,7 @@ DB connection details are stored in an env.py for development, for security reas
 * CSS Code must pass through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
 * JavaScript code must pass through the [JSHint Validator](https://jshint.com/).
 * Python Code must pass through [PEP8 Validator](http://pep8online.com/).
+* Python Code must pass through [Unit testing framework](https://docs.python.org/3/library/unittest.html).
 
 ### Test Cases and Description
 
